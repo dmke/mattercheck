@@ -1,7 +1,9 @@
 # mattercheck -- Mattermost Version Check
 
-Checks versions of running [Mattermost platform][] instances against the
-latest releases, and reports whether an update is available.
+[![GoDoc](https://godoc.org/github.com/dmke/mattercheck/version?status.svg)](https://godoc.org/github.com/dmke/mattercheck)
+
+Checks versions of running [Mattermost platform](https://about.mattermost.com/)
+instances against the latest releases, and reports whether an update is available.
 
 
 ## Installation
@@ -36,7 +38,5 @@ $ mattercheck http://127.0.0.1:8080
 2017/05/23 21:14:07 WARN  http://127.0.0.1:8080 v3.8.2-team -- SHA256 checksum c6179f7b2282cfbc8f0a691a90b41b554b62726f1dfb036fc59eed635556c8d9
 ```
 
-The exit code is 0 if all Mattermost instances are up-to-date, 1 if
-at least one instance is out-of-date and 2 for other errors.
-
-[Mattermost]: https://about.mattermost.com/
+The exit code is **0** if all Mattermost instances are up-to-date,
+**1** if at least one instance is out-of-date and **2** for other errors.

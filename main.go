@@ -1,3 +1,5 @@
+// Package main implements the `mattercheck` command line command. See
+// https://github.com/dmke/mattercheck for usage instructions.
 package main
 
 import (
