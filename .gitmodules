@@ -1,0 +1,6 @@
+[submodule "vendor/github.com/blang/semver"]
+	path = vendor/github.com/blang/semver
+	url = https://github.com/blang/semver
+[submodule "vendor/gopkg.in/xmlpath.v2"]
+	path = vendor/gopkg.in/xmlpath.v2
+	url = https://gopkg.in/xmlpath.v2
