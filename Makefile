@@ -1,9 +1,8 @@
 TARGET    = dist/mattercheck
 DEPS      = $(shell find . -type f -name '*.go')
+LDFLAGS	  = -s -w
 
 MANUL_BIN = $(GOPATH)/bin/manul
-
-LDFLAGS	  = -s -w
 
 build     = GOOS=$(1) GOARCH=$(2) go build -ldflags "$(LDFLAGS)" -o $(TARGET)_$(1)_$(2)
 

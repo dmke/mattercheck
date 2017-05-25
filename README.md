@@ -8,14 +8,14 @@ instances against the latest releases, and reports whether an update is availabl
 
 ## Installation
 
-If you have the Go toolchain installed, simply go-get this package:
+If you have the Go toolchain installed, simply go-get this package
+(this will install the latest version in `$GOPATH/bin/mattercheck`):
 
 ```sh
 go get -u github.com/dmke/mattercheck
 ```
 
-Otherwise, I'll prepare binary downloads for all major platforms,
-once I have tagged a release.
+You can find binary downloads on https://github.com/dmke/mattercheck/releases.
 
 ## Usage
 
