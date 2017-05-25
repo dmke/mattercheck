@@ -1,3 +1,5 @@
+// Package version provides version processing for mattercheck by wrapping the
+// github.com/blang/semver package.
 package version
 
 import (

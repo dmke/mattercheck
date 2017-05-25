@@ -38,5 +38,28 @@ $ mattercheck http://127.0.0.1:8080
 2017/05/23 21:14:07 WARN  http://127.0.0.1:8080 v3.8.2-team -- SHA256 checksum c6179f7b2282cfbc8f0a691a90b41b554b62726f1dfb036fc59eed635556c8d9
 ```
 
-The exit code is **0** if all Mattermost instances are up-to-date,
-**1** if at least one instance is out-of-date and **2** for other errors.
+### Exit code
+
+`mattercheck` communicates its status via exit codes, making it suitable
+for usage in shell scripts jobs (including Cron jobs):
+
+| Code | Meaning                                 |
+|:----:|:----------------------------------------|
+|   0  | all Mattermost instances are up-to-date |
+|   1  | at least one instance is out-of-date    |
+|   2  | other error, see output for details     |
+
+
+## Roadmap
+
+- [ ] some tests would be nice :-)
+- [ ] Post update notifications into Mattermost channels
+- [ ] `-s` parameter to *silence* any output
+
+
+## License, Copyright, Trademarks
+
+The source code is licensed under the terms of the MIT License.
+
+"Mattermost" is a trademark or registered trademarks of Mattermost or
+Mattermost’s licensors.
