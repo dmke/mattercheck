@@ -42,7 +42,7 @@ func (i *Instance) FetchVersion() (*version.Version, error) {
 	if err != nil {
 		return nil, err
 	}
-	v, err := version.ParseXVersionID(xver)
+	v, err := version.ExtractFromHeader(xver)
 	if err != nil {
 		return nil, err
 	}

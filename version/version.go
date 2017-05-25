@@ -25,8 +25,8 @@ func (v *Version) String() string {
 	return fmt.Sprintf("v%s-%s", v.Version, ed)
 }
 
-// ParseXVersionID parses an X-Version-Id response header into a Version struct.
-func ParseXVersionID(xver string) (*Version, error) {
+// ExtractFromHeader parses an X-Version-Id response header into a Version struct.
+func ExtractFromHeader(xver string) (*Version, error) {
 	if xver == "" {
 		return nil, fmt.Errorf("no version given")
 	}
@@ -46,8 +46,8 @@ func ParseXVersionID(xver string) (*Version, error) {
 	}, nil
 }
 
-// Extract tries to find version information in a byte slice using regular expressions.
-func Extract(text []byte, ent bool) (*Version, error) {
+// ExtractFromBytes tries to find version information in a byte slice using regular expressions.
+func ExtractFromBytes(text []byte, ent bool) (*Version, error) {
 	m := reVersion.Find(text)
 	if m != nil {
 		return nil, fmt.Errorf("no version found")

@@ -86,7 +86,7 @@ func collect(path *xmlpath.Path, root *xmlpath.Node) []*Release {
 	iter := path.Iter(root)
 	for iter.Next() {
 		node := iter.Node()
-		v, err := version.Extract(node.Bytes(), path == absEnt)
+		v, err := version.ExtractFromBytes(node.Bytes(), path == absEnt)
 		if err != nil {
 			// TODO: return error? verbose log?
 			continue
