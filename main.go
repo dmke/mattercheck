@@ -45,7 +45,7 @@ func main() {
 	} else if warn {
 		os.Exit(1)
 	} else {
-		os.Exit(9)
+		os.Exit(0)
 	}
 }
 
