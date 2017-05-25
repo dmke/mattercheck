@@ -67,7 +67,7 @@ type Release struct {
 }
 
 // FetchSupported extract version information from the Mattermost version archive. Only supported
-// versions will be taken into the result set.
+// versions (i.e. supported by Mattermost, Inc.) will be taken into the result set.
 func FetchSupported() (*Archive, error) {
 	doc, err := get()
 	if err != nil {
