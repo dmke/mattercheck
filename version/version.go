@@ -10,7 +10,7 @@ import (
 	"github.com/blang/semver"
 )
 
-var reVersion = regexp.MustCompile(`(v\d+\.\d+.\d+)`)
+var reVersion = regexp.MustCompile(`\bv\d+\.\d+.\d+\b`)
 
 // A Version represents a Mattermost version. It can distinguish between Enterprise and
 // Team installations.
@@ -51,10 +51,10 @@ func ExtractFromHeader(xver string) (*Version, error) {
 // ExtractFromBytes tries to find version information in a byte slice using regular expressions.
 func ExtractFromBytes(text []byte, ent bool) (*Version, error) {
 	m := reVersion.Find(text)
-	if m != nil {
+	if len(m) == 0 || m[0] != 'v' {
 		return nil, fmt.Errorf("no version found")
 	}
-	ver, err := semver.Parse(string(m))
+	ver, err := semver.Parse(string(m[1:]))
 	if err != nil {
 		return nil, err
 	}
