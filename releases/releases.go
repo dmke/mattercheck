@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/blang/semver"
 	"github.com/dmke/mattercheck/version"
 	"gopkg.in/xmlpath.v2"
 )
@@ -31,34 +32,29 @@ var (
 
 // Archive allows you to compare a given version with all supported versions.
 type Archive struct {
-	ent, team []*Release
+	ent, team *Release
 }
 
 // UpdateCandidate returns the newest known version (compared to the given version). It returns
 // nil, if there is no newer version found.
 func (a *Archive) UpdateCandidate(v *version.Version) *Release {
-	var list []*Release
+	var ref *Release
 	if v.Enterprise {
-		list = a.ent
+		ref = a.ent
 	} else {
-		list = a.team
+		ref = a.team
 	}
 
-	if len(list) == 0 {
-		return nil
-	}
-
-	max := list[0]
-	for _, r := range list[1:] {
-		if r.Version.GT(*max.Version.Version) {
-			max = r
-		}
-	}
-
-	if max.Version.GT(*v.Version) {
-		return max
+	if ref != nil && ref.Version.GT(*v.Version) {
+		return ref
 	}
 	return nil
+}
+
+// LatestReleases return the latest enterprise and team version from the
+// archive.
+func (a *Archive) LatestReleases() (ent, team *Release) {
+	return a.ent, a.team
 }
 
 // A Release contains information about a specific release entry found on
@@ -79,13 +75,13 @@ func FetchSupported() (*Archive, error) {
 	}
 
 	return &Archive{
-		ent:  collect(absEnt, doc),
-		team: collect(absTeam, doc),
+		ent:  findLatestRelease(absEnt, doc),
+		team: findLatestRelease(absTeam, doc),
 	}, nil
 }
 
-func collect(path *xmlpath.Path, root *xmlpath.Node) []*Release {
-	releases := make([]*Release, 0)
+func findLatestRelease(path *xmlpath.Path, root *xmlpath.Node) (release *Release) {
+	max := &semver.Version{}
 
 	iter := path.Iter(root)
 	for iter.Next() {
@@ -96,19 +92,31 @@ func collect(path *xmlpath.Path, root *xmlpath.Node) []*Release {
 			continue
 		}
 
-		r := &Release{Version: v}
-		if s, ok := relDownload.String(root); ok {
-			r.Download = s
+		if v.LTE(*max) {
+			continue
 		}
-		if s, ok := relChangeLog.String(root); ok {
+		max = v.Version
+
+		r := &Release{
+			Version:   v,
+			Download:  "-",
+			ChangeLog: "-",
+			Checksum:  "-",
+		}
+		if s, ok := relDownload.String(node); ok {
+			if u, err := absoluteURL(s); err == nil {
+				r.Download = u
+			}
+		}
+		if s, ok := relChangeLog.String(node); ok {
 			r.ChangeLog = s
 		}
-		if s, ok := relChecksum.String(root); ok {
+		if s, ok := relChecksum.String(node); ok {
 			r.Checksum = s
 		}
-		releases = append(releases, r)
+		release = r
 	}
-	return releases
+	return
 }
 
 // get can be replaced in tests
