@@ -20,6 +20,10 @@ func main() {
 		fail("%v", err)
 	}
 
+	ent, team := archive.LatestReleases()
+	log.Printf("INFO  mattermost=enterprise latest=%s download=%s checksum=%s", ent.Version, ent.Download, ent.Checksum)
+	log.Printf("INFO  mattermost=team latest=%s download=%s checksum=%s", team.Version, team.Download, team.Checksum)
+
 	var warn, fatal bool
 	for _, url := range os.Args[1:] {
 		running, err := instance.New(url).FetchVersion()
@@ -30,13 +34,10 @@ func main() {
 		}
 
 		if newRelease := archive.UpdateCandidate(running); newRelease == nil {
-			log.Printf("INFO  %s %s -- up-to-date", url, running)
+			log.Printf("INFO  %s running=%s -- up-to-date", url, running)
 		} else {
 			warn = true
-			log.Printf("WARN  %s %s -- found update to %s", url, running, newRelease.Version)
-			log.Printf("WARN  %s %s -- changelog       %s", url, running, newRelease.ChangeLog)
-			log.Printf("WARN  %s %s -- download        %s", url, running, newRelease.Download)
-			log.Printf("WARN  %s %s -- SHA256 checksum %s", url, running, newRelease.Checksum)
+			log.Printf("WARN  %s running=%s -- found update", url, running)
 		}
 	}
 

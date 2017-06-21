@@ -24,18 +24,19 @@ URL should suffice) as arguments:
 
 ```
 $ mattercheck https://mattermost.example.com http://127.0.0.1:8080
-2017/05/23 21:40:39 INFO  https://mattermost.example.com v3.9.0-enterprise -- up-to-date
-2017/05/23 21:40:39 INFO  http://127.0.0.1:8080 v3.9.0-team -- up-to-date
+2017/06/21 10:52:43 INFO  mattermost=enterprise latest=v3.10.0-enterprise download=https://releases.mattermost.com/3.10.0/mattermost-3.10.0-linux-amd64.tar.gz checksum=3977cb70b88a6def7009176bf23880fe5ad864cead05a1f2cae7792c8ac9148c
+2017/06/21 10:52:43 INFO  mattermost=team latest=v3.10.0-team download=https://releases.mattermost.com/3.10.0/mattermost-team-3.10.0-linux-amd64.tar.gz checksum=ed64cb5357a8a3669386fd73b9a3f4934a10f0a9da02dc4be085e3d2e36886ed
+2017/05/23 10:52:44 INFO  https://mattermost.example.com running=v3.10.0-enterprise -- up-to-date
+2017/05/23 10:52:44 INFO  http://127.0.0.1:8080 running=v3.10.0-team -- up-to-date
 ```
 
 or
 
 ```
 $ mattercheck http://127.0.0.1:8080
-2017/05/23 21:14:07 WARN  http://127.0.0.1:8080 v3.8.2-team -- found update to v3.9.0-team
-2017/05/23 21:14:07 WARN  http://127.0.0.1:8080 v3.8.2-team -- changelog       https://docs.mattermost.com/administration/changelog.html#release-v3-9-0
-2017/05/23 21:14:07 WARN  http://127.0.0.1:8080 v3.8.2-team -- download        https://releases.mattermost.com/3.9.0/mattermost-team-3.9.0-linux-amd64.tar.gz
-2017/05/23 21:14:07 WARN  http://127.0.0.1:8080 v3.8.2-team -- SHA256 checksum c6179f7b2282cfbc8f0a691a90b41b554b62726f1dfb036fc59eed635556c8d9
+2017/06/21 10:54:31 INFO  mattermost=enterprise latest=v3.10.0-enterprise download=https://releases.mattermost.com/3.10.0/mattermost-3.10.0-linux-amd64.tar.gz checksum=3977cb70b88a6def7009176bf23880fe5ad864cead05a1f2cae7792c8ac9148c
+2017/06/21 10:54:31 INFO  mattermost=team latest=v3.10.0-team download=https://releases.mattermost.com/3.10.0/mattermost-team-3.10.0-linux-amd64.tar.gz checksum=ed64cb5357a8a3669386fd73b9a3f4934a10f0a9da02dc4be085e3d2e36886ed
+2017/05/23 10:54:31 WARN  http://127.0.0.1:8080 running=v3.9.0-team -- found update
 ```
 
 ### Exit code
