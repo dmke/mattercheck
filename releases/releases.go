@@ -6,7 +6,9 @@
 package releases
 
 import (
+	"log"
 	"net/http"
+	"net/url"
 	"time"
 
 	"github.com/dmke/mattercheck/version"
@@ -23,6 +25,8 @@ var (
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)
 	relChecksum  = xmlpath.MustCompile(`./following-sibling::dd/ul/li[2]/code/span[@class="pre"]`)
+
+	baseURL *url.URL
 )
 
 // Archive allows you to compare a given version with all supported versions.
@@ -121,4 +125,20 @@ var get = func() (*xmlpath.Node, error) {
 	}
 	defer res.Body.Close()
 	return xmlpath.ParseHTML(res.Body)
+}
+
+func init() {
+	base, err := url.Parse(releasesURL)
+	if err != nil {
+		log.Fatalf("cannot parse release URL (%s): %v", releasesURL, err)
+	}
+	baseURL = base
+}
+
+func absoluteURL(path string) (string, error) {
+	u, err := url.Parse(path)
+	if err != nil {
+		return "", err
+	}
+	return baseURL.ResolveReference(u).String(), nil
 }
