@@ -19,6 +19,18 @@ type Version struct {
 	Enterprise bool // "team" if false
 }
 
+// Parse tries to parse a string into a Version object.
+func Parse(v string, ent bool) (*Version, error) {
+	ver, err := semver.Parse(v)
+	if err != nil {
+		return nil, err
+	}
+	return &Version{
+		Version:    &ver,
+		Enterprise: ent,
+	}, nil
+}
+
 func (v *Version) String() string {
 	ed := "team"
 	if v.Enterprise {
@@ -37,15 +49,8 @@ func ExtractFromHeader(xver string) (*Version, error) {
 	if len(chunks) != 8 {
 		return nil, fmt.Errorf("unexpected X-Version-Id, cannot parse %q", xver)
 	}
-	ver, err := semver.Parse(strings.Join(chunks[3:6], "."))
-	if err != nil {
-		return nil, err
-	}
 
-	return &Version{
-		Version:    &ver,
-		Enterprise: chunks[7] == "true",
-	}, nil
+	return Parse(strings.Join(chunks[3:6], "."), chunks[7] == "true")
 }
 
 // ExtractFromBytes tries to find version information in a byte slice using regular expressions.
@@ -54,12 +59,5 @@ func ExtractFromBytes(text []byte, ent bool) (*Version, error) {
 	if len(m) == 0 || m[0] != 'v' {
 		return nil, fmt.Errorf("no version found")
 	}
-	ver, err := semver.Parse(string(m[1:]))
-	if err != nil {
-		return nil, err
-	}
-	return &Version{
-		Version:    &ver,
-		Enterprise: ent,
-	}, nil
+	return Parse(string(m[1:]), ent)
 }
