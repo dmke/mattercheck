@@ -9,7 +9,7 @@ build     = GOOS=$(1) GOARCH=$(2) go build -ldflags "$(LDFLAGS)" -o $(TARGET)_$(
 
 # build a local version for tests, simply run make
 mattercheck: $(DEPS)
-	go build -o $@
+	go build -ldflags "$(LDFLAGS)" -o $@
 
 .PHONY: all
 all: clean $(DEPS)
