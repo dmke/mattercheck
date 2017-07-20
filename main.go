@@ -3,11 +3,11 @@
 package main
 
 import (
-	"log"
 	"os"
 
 	"github.com/dmke/mattercheck/instance"
 	"github.com/dmke/mattercheck/releases"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -21,23 +21,34 @@ func main() {
 	}
 
 	ent, team := archive.LatestReleases()
-	log.Printf("INFO  mattermost=enterprise latest=%s download=%s checksum=%s", ent.Version, ent.Download, ent.Checksum)
-	log.Printf("INFO  mattermost=team latest=%s download=%s checksum=%s", team.Version, team.Download, team.Checksum)
+	logrus.WithFields(logrus.Fields{
+		"latest":   ent.Version,
+		"download": ent.Download,
+		"checksum": ent.Checksum,
+	}).Info("current version")
+
+	logrus.WithFields(logrus.Fields{
+		"latest":   team.Version,
+		"download": team.Download,
+		"checksum": team.Checksum,
+	}).Info("current version")
 
 	var warn, fatal bool
 	for _, url := range os.Args[1:] {
+		ctxLog := logrus.WithField("url", url)
+
 		running, err := instance.New(url).FetchVersion()
 		if err != nil {
-			log.Printf("ERROR %s -- %v", url, err)
+			ctxLog.WithError(err).Error("could not check instance")
 			fatal = true
 			continue
 		}
 
 		if newRelease := archive.UpdateCandidate(running); newRelease == nil {
-			log.Printf("INFO  %s running=%s -- up-to-date", url, running)
+			ctxLog.Info("instance is up-to-date")
 		} else {
 			warn = true
-			log.Printf("WARN  %s running=%s -- found update", url, running)
+			ctxLog.Warn("found update for instance")
 		}
 	}
 
@@ -51,6 +62,6 @@ func main() {
 }
 
 func fail(msg string, args ...interface{}) {
-	log.Printf(msg, args...) // [!] log.Fatal() call os.Exit(1)
+	logrus.Errorf(msg, args...) // [!] Fatal() call os.Exit(1)
 	os.Exit(2)
 }
