@@ -53,9 +53,9 @@ for usage in shell scripts jobs (including Cron jobs):
 
 ## Roadmap
 
-- [ ] some tests would be nice :-)
+- [x] some tests would be nice :-)
 - [ ] Post update notifications into Mattermost channels
-- [ ] `-s` parameter to *silence* any output
+- [x] `-q` parameter to *silence* any output
 
 
 ## License, Copyright, Trademarks

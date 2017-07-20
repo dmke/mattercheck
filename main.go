@@ -3,6 +3,8 @@
 package main
 
 import (
+	"flag"
+	"fmt"
 	"os"
 
 	"github.com/dmke/mattercheck/instance"
@@ -11,8 +13,16 @@ import (
 )
 
 func main() {
-	if len(os.Args) == 1 {
-		fail("Usage: %s url [url [...]]", os.Args[0])
+	var quiet, help bool
+	flag.BoolVar(&quiet, "q", quiet, "suppress log output")
+	flag.BoolVar(&help, "h", help, "show this help message")
+	flag.Usage = usage
+	flag.Parse()
+
+	args := flag.Args()
+	if help || len(args) == 0 {
+		usage()
+		os.Exit(2)
 	}
 
 	archive, err := releases.FetchSupported()
@@ -21,34 +31,42 @@ func main() {
 	}
 
 	ent, team := archive.LatestReleases()
-	logrus.WithFields(logrus.Fields{
-		"latest":   ent.Version,
-		"download": ent.Download,
-		"checksum": ent.Checksum,
-	}).Info("current version")
+	if !quiet {
+		logrus.WithFields(logrus.Fields{
+			"latest":   ent.Version,
+			"download": ent.Download,
+			"checksum": ent.Checksum,
+		}).Info("current version")
 
-	logrus.WithFields(logrus.Fields{
-		"latest":   team.Version,
-		"download": team.Download,
-		"checksum": team.Checksum,
-	}).Info("current version")
+		logrus.WithFields(logrus.Fields{
+			"latest":   team.Version,
+			"download": team.Download,
+			"checksum": team.Checksum,
+		}).Info("current version")
+	}
 
 	var warn, fatal bool
-	for _, url := range os.Args[1:] {
+	for _, url := range args {
 		ctxLog := logrus.WithField("url", url)
 
 		running, err := instance.New(url).FetchVersion()
 		if err != nil {
-			ctxLog.WithError(err).Error("could not check instance")
+			if !quiet {
+				ctxLog.WithError(err).Error("could not check instance")
+			}
 			fatal = true
 			continue
 		}
 
 		if newRelease := archive.UpdateCandidate(running); newRelease == nil {
-			ctxLog.Info("instance is up-to-date")
+			if !quiet {
+				ctxLog.Info("instance is up-to-date")
+			}
 		} else {
 			warn = true
-			ctxLog.Warn("found update for instance")
+			if !quiet {
+				ctxLog.Warn("found update for instance")
+			}
 		}
 	}
 
@@ -59,6 +77,15 @@ func main() {
 	} else {
 		os.Exit(0)
 	}
+}
+
+func usage() {
+	fmt.Fprintln(os.Stderr, "SYNOPSIS")
+	fmt.Fprintf(os.Stderr, "  %s [-q] URL [URL [...]]\n", os.Args[0])
+	fmt.Fprintf(os.Stderr, "  %s -h\n\n", os.Args[0])
+	fmt.Fprintln(os.Stderr, "OPTIONS")
+	fmt.Fprintln(os.Stderr, "  URL   one or more URLs to probe")
+	flag.PrintDefaults()
 }
 
 func fail(msg string, args ...interface{}) {
