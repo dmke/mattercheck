@@ -31,19 +31,7 @@ func main() {
 	}
 
 	ent, team := archive.LatestReleases()
-	if !quiet {
-		logrus.WithFields(logrus.Fields{
-			"latest":   ent.Version,
-			"download": ent.Download,
-			"checksum": ent.Checksum,
-		}).Info("current version")
-
-		logrus.WithFields(logrus.Fields{
-			"latest":   team.Version,
-			"download": team.Download,
-			"checksum": team.Checksum,
-		}).Info("current version")
-	}
+	showEnt, showTeam := false, false
 
 	var warn, fatal bool
 	for _, url := range args {
@@ -64,10 +52,28 @@ func main() {
 			}
 		} else {
 			warn = true
+			if running.Enterprise {
+				showEnt = true
+			} else {
+				showTeam = true
+			}
 			if !quiet {
 				ctxLog.Warn("found update for instance")
 			}
 		}
+	}
+
+	if !quiet && showEnt {
+		logrus.WithField("latest", ent.Version).Info("current Enterprise version")
+		logrus.WithField("download", ent.Download).Info()
+		logrus.WithField("checksum", ent.Checksum).Info()
+		logrus.WithField("changelog", ent.ChangeLog).Info()
+	}
+	if !quiet && showTeam {
+		logrus.WithField("latest", team.Version).Info("current Team version")
+		logrus.WithField("download", team.Download).Info()
+		logrus.WithField("checksum", team.Checksum).Info()
+		logrus.WithField("changelog", team.ChangeLog).Info()
 	}
 
 	if fatal {
