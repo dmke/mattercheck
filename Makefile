@@ -25,6 +25,10 @@ all: clean $(DEPS)
 deps: $(MANUL_BIN)
 	$(MANUL_BIN) -r -U
 
+.PHONY: install
+install: $(DEPS)
+	go install -ldflags "$(LDFLAGS)" .
+
 .PHONE: clean
 clean:
 	rm -f mattercheck
