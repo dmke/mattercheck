@@ -46,6 +46,8 @@ func main() {
 			continue
 		}
 
+		ctxLog = ctxLog.WithField("version", running.String())
+
 		if newRelease := archive.UpdateCandidate(running); newRelease == nil {
 			if !quiet {
 				ctxLog.Info("instance is up-to-date")

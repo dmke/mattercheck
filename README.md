@@ -24,19 +24,19 @@ URL should suffice) as arguments:
 
 ```
 $ mattercheck https://mattermost.example.com http://127.0.0.1:8080
-2017/06/21 10:52:43 INFO  mattermost=enterprise latest=v3.10.0-enterprise download=https://releases.mattermost.com/3.10.0/mattermost-3.10.0-linux-amd64.tar.gz checksum=3977cb70b88a6def7009176bf23880fe5ad864cead05a1f2cae7792c8ac9148c
-2017/06/21 10:52:43 INFO  mattermost=team latest=v3.10.0-team download=https://releases.mattermost.com/3.10.0/mattermost-team-3.10.0-linux-amd64.tar.gz checksum=ed64cb5357a8a3669386fd73b9a3f4934a10f0a9da02dc4be085e3d2e36886ed
-2017/05/23 10:52:44 INFO  https://mattermost.example.com running=v3.10.0-enterprise -- up-to-date
-2017/05/23 10:52:44 INFO  http://127.0.0.1:8080 running=v3.10.0-team -- up-to-date
+INFO[0000] instance is up-to-date                        url="https://mattermost.example.com" version=v4.0.3-team
+INFO[0000] instance is up-to-date                        url="http://127.0.0.1:8080" version=v4.0.3-enterprise
 ```
 
 or
 
 ```
-$ mattercheck http://127.0.0.1:8080
-2017/06/21 10:54:31 INFO  mattermost=enterprise latest=v3.10.0-enterprise download=https://releases.mattermost.com/3.10.0/mattermost-3.10.0-linux-amd64.tar.gz checksum=3977cb70b88a6def7009176bf23880fe5ad864cead05a1f2cae7792c8ac9148c
-2017/06/21 10:54:31 INFO  mattermost=team latest=v3.10.0-team download=https://releases.mattermost.com/3.10.0/mattermost-team-3.10.0-linux-amd64.tar.gz checksum=ed64cb5357a8a3669386fd73b9a3f4934a10f0a9da02dc4be085e3d2e36886ed
-2017/05/23 10:54:31 WARN  http://127.0.0.1:8080 running=v3.9.0-team -- found update
+$ mattercheck http://127.0.0.1:8081
+WARN[0000] found update for instance                     url="http://127.0.0.1:8081" version=v4.0.2-enterprise
+INFO[0000] current Enterprise version                    latest=v4.0.3-enterprise
+INFO[0000]                                               download="https://releases.mattermost.com/4.0.3/mattermost-4.0.3-linux-amd64.tar.gz"
+INFO[0000]                                               checksum=68db15547d39bd97de337e162854e07e8073f2ac74e0916fdd91b57400d04815
+INFO[0000]                                               changelog="https://docs.mattermost.com/administration/changelog.html#release-v4-0-3"
 ```
 
 ### Exit code
