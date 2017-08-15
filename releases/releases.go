@@ -109,7 +109,12 @@ func findLatestRelease(path *xmlpath.Path, root *xmlpath.Node) (release *Release
 			}
 		}
 		if s, ok := relChangeLog.String(node); ok {
-			r.ChangeLog = s
+			u, err := url.Parse(s)
+			if err != nil {
+				r.ChangeLog = s
+			} else {
+				r.ChangeLog = baseURL.ResolveReference(u).String()
+			}
 		}
 		if s, ok := relChecksum.String(node); ok {
 			r.Checksum = s
