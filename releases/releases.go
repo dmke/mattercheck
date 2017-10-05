@@ -17,11 +17,11 @@ import (
 )
 
 // TODO: a JSON feed would be nice (https://github.com/mattermost/docs/issues/1190#issuecomment-302162095)
-const releasesURL = "https://docs.mattermost.com/administration/upgrade.html"
+const releasesURL = "https://docs.mattermost.com/administration/version-archive.html"
 
 var (
-	absEnt  = xmlpath.MustCompile(`//div[@id="mattermost-enterprise-edition-supported-versions"]/dl/dt`)
-	absTeam = xmlpath.MustCompile(`//div[@id="mattermost-team-edition-server-archive-supported-versions"]/dl/dt`)
+	absEnt  = xmlpath.MustCompile(`//div[@id='mattermost-enterprise-edition']/dl/dt`)
+	absTeam = xmlpath.MustCompile(`//div[@id='mattermost-team-edition-server-archive']/dl/dt`)
 
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)
@@ -58,7 +58,7 @@ func (a *Archive) LatestReleases() (ent, team *Release) {
 }
 
 // A Release contains information about a specific release entry found on
-// https://docs.mattermost.com/administration/upgrade.html#version-archive
+// https://docs.mattermost.com/administration/version-archive.html
 type Release struct {
 	Version   *version.Version
 	ChangeLog string // URL to change log
