@@ -6,13 +6,22 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/dmke/mattercheck/instance"
 	"github.com/dmke/mattercheck/releases"
 	"github.com/sirupsen/logrus"
+	prefixed "github.com/x-cray/logrus-prefixed-formatter"
 )
 
+var log = logrus.WithField("prefix", "mattercheck")
+
 func main() {
+	logrus.SetFormatter(&prefixed.TextFormatter{
+		FullTimestamp:   true,
+		TimestampFormat: time.Stamp,
+	})
+
 	var quiet, help bool
 	flag.BoolVar(&quiet, "q", quiet, "suppress log output")
 	flag.BoolVar(&help, "h", help, "show this help message")
@@ -35,7 +44,7 @@ func main() {
 
 	var warn, fatal bool
 	for _, url := range args {
-		ctxLog := logrus.WithField("url", url)
+		ctxLog := log.WithField("url", url)
 
 		running, err := instance.New(url).FetchVersion()
 		if err != nil {
@@ -60,22 +69,26 @@ func main() {
 				showTeam = true
 			}
 			if !quiet {
-				ctxLog.Warn("found update for instance")
+				ctxLog.Warn("found update")
 			}
 		}
 	}
 
 	if !quiet && showEnt {
-		logrus.WithField("latest", ent.Version).Info("current Enterprise version")
-		logrus.WithField("download", ent.Download).Info()
-		logrus.WithField("checksum", ent.Checksum).Info()
-		logrus.WithField("changelog", ent.ChangeLog).Info()
+		log.WithFields(logrus.Fields{
+			"version":   ent.Version,
+			"download":  ent.Download,
+			"checksum":  ent.Checksum,
+			"changelog": ent.ChangeLog,
+		}).Info("current Enterprise version")
 	}
 	if !quiet && showTeam {
-		logrus.WithField("latest", team.Version).Info("current Team version")
-		logrus.WithField("download", team.Download).Info()
-		logrus.WithField("checksum", team.Checksum).Info()
-		logrus.WithField("changelog", team.ChangeLog).Info()
+		log.WithFields(logrus.Fields{
+			"version":   team.Version,
+			"download":  team.Download,
+			"checksum":  team.Checksum,
+			"changelog": team.ChangeLog,
+		}).Info("current Team version")
 	}
 
 	if fatal {
@@ -97,6 +110,6 @@ func usage() {
 }
 
 func fail(msg string, args ...interface{}) {
-	logrus.Errorf(msg, args...) // [!] Fatal() call os.Exit(1)
+	log.Errorf(msg, args...) // [!] Fatal() call os.Exit(1)
 	os.Exit(2)
 }

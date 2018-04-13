@@ -24,19 +24,16 @@ URL should suffice) as arguments:
 
 ```
 $ mattercheck https://mattermost.example.com http://127.0.0.1:8080
-INFO[0000] instance is up-to-date                        url="https://mattermost.example.com" version=v4.0.3-team
-INFO[0000] instance is up-to-date                        url="http://127.0.0.1:8080" version=v4.0.3-enterprise
+[Apr 13 11:48:30]  INFO mattercheck: instance is up-to-date url=https://mattermost.example.com version=v4.8.1-team
+[Apr 13 11:48:31]  INFO mattercheck: instance is up-to-date url=http://127.0.0.1:8000 version=v4.8.1-enterprise
 ```
 
 or
 
 ```
 $ mattercheck http://127.0.0.1:8081
-WARN[0000] found update for instance                     url="http://127.0.0.1:8081" version=v4.0.2-enterprise
-INFO[0000] current Enterprise version                    latest=v4.0.3-enterprise
-INFO[0000]                                               download="https://releases.mattermost.com/4.0.3/mattermost-4.0.3-linux-amd64.tar.gz"
-INFO[0000]                                               checksum=68db15547d39bd97de337e162854e07e8073f2ac74e0916fdd91b57400d04815
-INFO[0000]                                               changelog="https://docs.mattermost.com/administration/changelog.html#release-v4-0-3"
+[Apr 13 11:55:04]  WARN mattercheck: found update url=http://127.0.0.1:8001 version=v4.0.2-enterprise
+[Apr 13 11:55:04]  INFO mattercheck: current Enterprise version changelog=https://docs.mattermost.com/administration/changelog.html#release-v4-8 checksum=3dac9f9bb4884cd83b8274c2bd7c32418f2535d3f9911cea845ac047ee2c7a82 download=https://releases.mattermost.com/4.8.1/mattermost-4.8.1-linux-amd64.tar.gz version=v4.8.1-enterprise
 ```
 
 ### Exit code
