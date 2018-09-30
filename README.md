@@ -33,7 +33,7 @@ or
 ```
 $ mattercheck http://127.0.0.1:8081
 [Apr 13 11:55:04]  WARN mattercheck: found update url=http://127.0.0.1:8001 version=v4.0.2-enterprise
-[Apr 13 11:55:04]  INFO mattercheck: current Enterprise version changelog=https://docs.mattermost.com/administration/changelog.html#release-v4-8 checksum=3dac9f9bb4884cd83b8274c2bd7c32418f2535d3f9911cea845ac047ee2c7a82 download=https://releases.mattermost.com/4.8.1/mattermost-4.8.1-linux-amd64.tar.gz version=v4.8.1-enterprise
+[Apr 13 11:55:04]  INFO mattercheck: current Enterprise version changelog=https://docs.mattermost.com/administration/changelog.html#release-v4-8 checksum=sha256:3dac9f9bb4884cd83b8274c2bd7c32418f2535d3f9911cea845ac047ee2c7a82 download=https://releases.mattermost.com/4.8.1/mattermost-4.8.1-linux-amd64.tar.gz version=v4.8.1-enterprise
 ```
 
 ### Exit code

@@ -117,7 +117,7 @@ func findLatestRelease(path *xmlpath.Path, root *xmlpath.Node) (release *Release
 			}
 		}
 		if s, ok := relChecksum.String(node); ok {
-			r.Checksum = s
+			r.Checksum = "sha256:" + s
 		}
 		release = r
 	}
