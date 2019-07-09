@@ -91,11 +91,12 @@ func main() {
 		}).Info("current Team version")
 	}
 
-	if fatal {
+	switch {
+	case fatal:
 		os.Exit(2)
-	} else if warn {
+	case warn:
 		os.Exit(1)
-	} else {
+	default:
 		os.Exit(0)
 	}
 }

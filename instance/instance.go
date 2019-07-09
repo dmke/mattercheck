@@ -1,5 +1,5 @@
-// Package instance allows you to retrieve version information of a runnung Mattermost
-// platform installation.
+// Package instance allows you to retrieve version information of a
+// running Mattermost platform installation.
 package instance
 
 import (

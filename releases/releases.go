@@ -26,9 +26,15 @@ var (
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)
 	relChecksum  = xmlpath.MustCompile(`./following-sibling::dd/ul/li[2]/code/span[@class="pre"]`)
-
-	baseURL *url.URL
 )
+
+var baseURL = func() *url.URL {
+	base, err := url.Parse(releasesURL)
+	if err != nil {
+		log.Fatalf("cannot parse release URL (%s): %v", releasesURL, err)
+	}
+	return base
+}()
 
 // Archive allows you to compare a given version with all supported versions.
 type Archive struct {
@@ -121,7 +127,7 @@ func findLatestRelease(path *xmlpath.Path, root *xmlpath.Node) (release *Release
 		}
 		release = r
 	}
-	return
+	return release
 }
 
 // get can be replaced in tests
@@ -138,14 +144,6 @@ var get = func() (*xmlpath.Node, error) {
 	}
 	defer res.Body.Close()
 	return xmlpath.ParseHTML(res.Body)
-}
-
-func init() {
-	base, err := url.Parse(releasesURL)
-	if err != nil {
-		log.Fatalf("cannot parse release URL (%s): %v", releasesURL, err)
-	}
-	baseURL = base
 }
 
 func absoluteURL(path string) (string, error) {
