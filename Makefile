@@ -4,7 +4,7 @@ DEPS      = $(shell find . -type f -name '*.go')
 LDFLAGS	  = -s -w
 
 export GO111MODULE=on
-build     = GOOS=$(1) GOARCH=$(2) go build -ldflags "$(LDFLAGS)" -o $(TARGET)_$(1)_$(2)$(3)
+build     = GOOS=$(1) GOARCH=$(2) go build -ldflags "$(LDFLAGS)" -trimpath -o $(TARGET)_$(1)_$(2)$(3)
 
 # build a local version for tests, simply run make
 mattercheck: $(DEPS)
