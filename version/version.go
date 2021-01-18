@@ -50,6 +50,7 @@ func ExtractFromHeader(xver string) (*Version, error) {
 		return nil, fmt.Errorf("unexpected X-Version-Id, cannot parse %q", xver)
 	}
 
+	chunks[5] = strings.TrimSuffix(chunks[5], "{PATCH}")
 	return Parse(strings.Join(chunks[3:6], "."), chunks[7] == "true")
 }
 
