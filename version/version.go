@@ -3,6 +3,7 @@
 package version
 
 import (
+	"errors"
 	"fmt"
 	"regexp"
 	"strings"
@@ -23,7 +24,7 @@ type Version struct {
 func Parse(v string, ent bool) (*Version, error) {
 	ver, err := semver.Parse(v)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("parsing %q failed: %w", v, err)
 	}
 	return &Version{
 		Version:    &ver,
@@ -39,15 +40,28 @@ func (v *Version) String() string {
 	return fmt.Sprintf("v%s-%s", v.Version, ed)
 }
 
+var (
+	ErrNoVersionGiven = errors.New("no version given")
+	ErrNoVersionFound = errors.New("no version found")
+)
+
+type ErrUnexpectedIDFormat struct {
+	v string
+}
+
+func (err *ErrUnexpectedIDFormat) Error() string {
+	return fmt.Sprintf("unexpected X-Version-Id, cannot parse %q", err.v)
+}
+
 // ExtractFromHeader parses an X-Version-Id response header into a Version struct.
 func ExtractFromHeader(xver string) (*Version, error) {
 	if xver == "" {
-		return nil, fmt.Errorf("no version given")
+		return nil, ErrNoVersionGiven
 	}
 
 	chunks := strings.Split(xver, ".")
 	if len(chunks) != 8 {
-		return nil, fmt.Errorf("unexpected X-Version-Id, cannot parse %q", xver)
+		return nil, &ErrUnexpectedIDFormat{xver}
 	}
 
 	chunks[5] = strings.TrimSuffix(chunks[5], "{PATCH}")
@@ -58,7 +72,7 @@ func ExtractFromHeader(xver string) (*Version, error) {
 func ExtractFromBytes(text []byte, ent bool) (*Version, error) {
 	m := reVersion.Find(text)
 	if len(m) == 0 || m[0] != 'v' {
-		return nil, fmt.Errorf("no version found")
+		return nil, ErrNoVersionFound
 	}
 	return Parse(string(m[1:]), ent)
 }
