@@ -35,7 +35,7 @@ func TestFindLatestTeamRelease(t *testing.T) {
 	r := findLatestRelease(absTeam, doc)
 	assert.False(r.Version.Enterprise)
 
-	expected, _ := semver.Parse("4.2.0")
+	expected, _ := semver.Parse("5.31.0")
 	assert.True(r.Version.EQ(expected))
 }
 
@@ -46,7 +46,7 @@ func TestFindLatestEnterpriseRelease(t *testing.T) {
 	r := findLatestRelease(absEnt, doc)
 	assert.True(r.Version.Enterprise)
 
-	expected, _ := semver.Parse("4.2.0")
+	expected, _ := semver.Parse("5.31.0")
 	assert.True(r.Version.EQ(expected))
 }
 
@@ -56,7 +56,7 @@ func TestUpdateCandidate(t *testing.T) {
 	archive, err := FetchSupported()
 	assert.NoError(err)
 
-	max, _ := semver.Parse("4.2.0")
+	max, _ := semver.Parse("5.31.0")
 
 	for _, expected := range []struct {
 		have    string
@@ -67,7 +67,10 @@ func TestUpdateCandidate(t *testing.T) {
 		{"3.4.0", true},
 		{"4.0.0", true},
 		{"4.0.1", true},
-		{"4.2.0", false},
+		{"4.2.0", true},
+		{"5.31.0", false},
+		{"5.33.0", false},
+		{"6.0.0", false},
 	} {
 		for _, ent := range []bool{true, false} {
 			have, err := version.Parse(expected.have, ent)
