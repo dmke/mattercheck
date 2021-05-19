@@ -25,7 +25,7 @@ var (
 
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)
-	relChecksum  = xmlpath.MustCompile(`./following-sibling::dd/ul/li[2]/code/span[@class="pre"]`)
+	relChecksum  = xmlpath.MustCompile(`./following-sibling::dd/ul/li[2]/p/code/span[@class="pre"]`)
 )
 
 var baseURL = func() *url.URL {
