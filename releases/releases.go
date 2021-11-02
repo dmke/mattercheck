@@ -17,11 +17,11 @@ import (
 )
 
 // TODO: a JSON feed would be nice (https://github.com/mattermost/docs/issues/1190#issuecomment-302162095)
-const releasesURL = "https://docs.mattermost.com/administration/version-archive.html"
+const releasesURL = "https://docs.mattermost.com/upgrade/version-archive.html"
 
 var (
 	absEnt  = xmlpath.MustCompile(`//div[@id='mattermost-enterprise-edition']/dl/dt`)
-	absTeam = xmlpath.MustCompile(`//div[@id='mattermost-team-edition-server-archive']/dl/dt`)
+	absTeam = xmlpath.MustCompile(`//div[@id='mattermost-team-edition']/dl/dt`)
 
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)

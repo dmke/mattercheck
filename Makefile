@@ -28,3 +28,8 @@ install: $(DEPS)
 clean:
 	rm -f mattercheck
 	rm -rf dist
+
+.PHONY: update-fixture
+update-fixture:
+	curl -sSLo releases/testdata/version-archive.html \
+		https://docs.mattermost.com/upgrade/version-archive.html
