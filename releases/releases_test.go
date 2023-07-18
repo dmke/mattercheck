@@ -31,11 +31,11 @@ func init() {
 
 const (
 	// Latest version found in testdata/version-archive.html.
-	fixtureVersion = "6.0.2"
+	fixtureVersion = "8.0.0"
 
 	// The corresponding SHA256 checksums.
-	entChecksum  = "4580a435a350c9401d50972e720a47e2551eba889a51b976991c6b906a2ac1fd"
-	teamChecksum = "56a2148e8cac5c40ac700fed4cd52c875c512fa0dce5e54f1414af7513f0cb8e"
+	entChecksum  = "e5ac1c852c595ed350d970fb7e2e674205944af8097e98829e96b38ab19a6618"
+	teamChecksum = "46b44a2a6b8d7a2bad4553e40a565f1eb3e0b86d60903d97ec4d2f37f68effb2"
 )
 
 func TestFindLatestTeamRelease(t *testing.T) {
