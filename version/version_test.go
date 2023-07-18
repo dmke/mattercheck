@@ -21,6 +21,9 @@ func TestExtractFromHeader(t *testing.T) {
 			// bad release day?
 			subject:  "5.30.0.5.30.6{PATCH}.746d8722cf018bd48fc004b3ca0fe672.false",
 			expected: "v5.30.6-team",
+		}, {
+			subject:  "8.0.0..0.abdfa4fc99b82cc1dc8f364175415527.false",
+			expected: "v8.0.0-team",
 		},
 	}
 

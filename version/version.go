@@ -60,8 +60,20 @@ func ExtractFromHeader(xver string) (*Version, error) {
 	}
 
 	chunks := strings.Split(xver, ".")
-	if len(chunks) != 8 {
-		return nil, &ErrUnexpectedIDFormat{xver}
+	switch true {
+	case strings.HasPrefix(xver, "8.0.0..0"):
+		if len(chunks) != 7 {
+			return nil, &ErrUnexpectedIDFormat{xver}
+		}
+		refmt := make([]string, 8)
+		copy(refmt, chunks[0:3])
+		copy(refmt[3:], chunks[0:2])
+		copy(refmt[5:], chunks[4:])
+		chunks = refmt
+	default:
+		if len(chunks) != 8 {
+			return nil, &ErrUnexpectedIDFormat{xver}
+		}
 	}
 
 	chunks[5] = strings.TrimSuffix(chunks[5], "{PATCH}")
