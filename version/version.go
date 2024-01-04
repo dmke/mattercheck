@@ -33,6 +33,10 @@ func Parse(v string, ent bool) (*Version, error) {
 }
 
 func (v *Version) String() string {
+	if v == nil {
+		return "<unknown>"
+	}
+
 	ed := "team"
 	if v.Enterprise {
 		ed = "enterprise"
@@ -60,24 +64,22 @@ func ExtractFromHeader(xver string) (*Version, error) {
 	}
 
 	chunks := strings.Split(xver, ".")
-	switch true {
-	case strings.HasPrefix(xver, "8.0.0..0"):
-		if len(chunks) != 7 {
-			return nil, &ErrUnexpectedIDFormat{xver}
-		}
-		refmt := make([]string, 8)
-		copy(refmt, chunks[0:3])
-		copy(refmt[3:], chunks[0:2])
-		copy(refmt[5:], chunks[4:])
-		chunks = refmt
-	default:
-		if len(chunks) != 8 {
-			return nil, &ErrUnexpectedIDFormat{xver}
-		}
+	n := len(chunks)
+	if n < 4 {
+		// too short
+		return nil, &ErrUnexpectedIDFormat{xver}
 	}
 
-	chunks[5] = strings.TrimSuffix(chunks[5], "{PATCH}")
-	return Parse(strings.Join(chunks[3:6], "."), chunks[7] == "true")
+	raw := strings.Join(chunks[:3], ".")
+	if n == 8 && chunks[0] == chunks[3] {
+		// Some older version strings have the DB version prefixed to the
+		// app version. We're only interested in the latter
+		raw = strings.Join(chunks[3:6], ".")
+	}
+	// remove other garbage
+	raw = strings.TrimSuffix(raw, "{PATCH}")
+
+	return Parse(raw, chunks[n-1] == "true")
 }
 
 // ExtractFromBytes tries to find version information in a byte slice using regular expressions.
