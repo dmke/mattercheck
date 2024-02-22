@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Version Archive &mdash; Mattermost  documentation</title>
@@ -24,7 +25,7 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/mytheme.css?version=v46" type="text/css" />
+  <link rel="stylesheet" href="../_static/mytheme.css?version=v52" type="text/css" />
   <link rel="stylesheet" href="../_static/css/compass-icons.css" type="text/css" />
 
   
@@ -38,7 +39,7 @@
   
     <link rel="canonical" href="https://docs.mattermost.com/upgrade/version-archive.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Scaling for Enterprise" href="../scale/scaling-for-enterprise.html" />
+    <link rel="next" title="Scale Mattermost" href="../guides/scale-mattermost.html" />
     <link rel="prev" title="Downgrade Mattermost Server" href="downgrading-mattermost-server.html" />
 
   	<!-- Google Tag Manager -->
@@ -100,89 +101,26 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">About Mattermost</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../about/product.html">Mattermost overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/product.html#the-mattermost-platform">The Mattermost platform</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/product.html#collaboration-workflows-addressed-by-mattermost">Collaboration workflows addressed by Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/product.html#about-the-mattermost-open-source-project">About the Mattermost open source project</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../about/product.html">Mattermost overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/use-cases.html">Use cases</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../about/secure-command-and-control.html">Secure command and control</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/unified-collaboration.html">Unified communication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../about/unified-collaboration.html">Unified communication</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../about/mattermost-for-microsoft-teams.html">Mattermost for Microsoft Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../about/mattermost-google-calendar-integration.html">Mattermost Google Calendar integration</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../about/devops-collaboration.html">DevOps collaboration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../about/incident-response-collaboration.html">Incident response collaboration</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../about/security.html">Security overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/security.html#security-features">Security features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/security.html#security-updates">Security updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/security.html#security-policies">Security policies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/security.html#hipaa-compliance">HIPAA compliance*</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/security.html#finra-compliance">FINRA compliance*</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/integrations.html">Integrations overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#custom-apps">Custom Apps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#api">API</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#plugins">Plugins</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#bots">Bots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#custom-slash-commands">Custom slash commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#webhooks">Webhooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/integrations.html#source-code-customizations">Source code customizations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/subscription.html">Subscription overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/subscription.html#mattermost-nonprofit-license-program">Mattermost Nonprofit License program</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/subscription.html#mattermost-educational-license-program">Mattermost educational license program</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/subscription.html#frequently-asked-questions">Frequently asked questions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/self-hosted-subscriptions.html">Self-hosted subscriptions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#buy-a-subscription">Buy a subscription</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#apply-your-license">Apply your license</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#view-subscription-information">View subscription information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#add-more-users-to-your-subscription">Add more users to your subscription</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#quarterly-true-up-reports-from-v7-9">Quarterly true-up reports from v7.9</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#renew-your-subscription">Renew your subscription</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/self-hosted-subscriptions.html#frequently-asked-questions">Frequently asked questions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/cloud-subscriptions.html">Cloud subscriptions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#buy-a-cloud-subscription">Buy a Cloud subscription</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#view-subscription-information">View subscription information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#billing-period">Billing period</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#failed-or-late-payments">Failed or late payments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#add-more-users-to-your-cloud-professional-subscription">Add more users to your Cloud Professional subscription</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#renew-your-subscription">Renew your subscription</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/cloud-subscriptions.html#frequently-asked-questions">Frequently asked questions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/editions-and-offerings.html">Mattermost editions and plans</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#self-hosted-editions">Self-hosted editions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#mattermost-plans">Mattermost plans</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#mattermost-free">Mattermost Free</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#mattermost-professional">Mattermost Professional</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#mattermost-enterprise">Mattermost Enterprise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#other-mattermost-plans">Other Mattermost plans</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/editions-and-offerings.html#product-decisions">Product decisions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/corporate-directory-integration.html">Corporate directory integration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/corporate-directory-integration.html#basic-authentication">Basic authentication</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/corporate-directory-integration.html#security-features-for-authentication">Security features for authentication</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/corporate-directory-integration.html#active-directory-ldap-authentication">Active Directory/LDAP authentication</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/corporate-directory-integration.html#authentication-options-outside-of-a-private-network">Authentication options outside of a private network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/corporate-directory-integration.html#future-authentication-methods">Future authentication methods</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../about/certifications-and-compliance.html">Certifications and compliance overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/certifications-and-compliance.html#gdpr-compliance">GDPR compliance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/certifications-and-compliance.html#accessibility-compliance">Accessibility compliance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/certifications-and-compliance.html#u-s-trade-compliance">U.S. trade compliance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/certifications-and-compliance.html#u-s-export-compliance-overview">U.S. export compliance overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/certifications-and-compliance.html#frequently-asked-questions">Frequently asked questions</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../about/security.html">Security overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/integrations.html">Integrations overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/subscription.html">Subscription overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/self-hosted-subscriptions.html">Self-hosted subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/cloud-subscriptions.html">Cloud subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/editions-and-offerings.html">Mattermost editions and plans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/corporate-directory-integration.html">Corporate directory integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/certifications-and-compliance.html">Certifications and compliance overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/frequently-asked-questions.html">Frequently asked questions (FAQ)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../about/faq-general.html">General Mattermost questions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../about/faq-community.html">Community questions</a></li>
@@ -202,120 +140,115 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../guides/deployment.html">Deploy Mattermost</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../install/prepare-mattermost-database.html">Prepare your Mattermost database</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../install/install-ubuntu.html">Deploy on Ubuntu</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-ubuntu.html#add-the-mattermost-server-ppa-repository">Add the Mattermost Server PPA repository</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-ubuntu.html#install">Install</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-ubuntu.html#setup">Setup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-ubuntu.html#updates">Updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-ubuntu.html#remove-mattermost">Remove Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-ubuntu.html#frequently-asked-questions">Frequently asked questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/prepare-mattermost-database.html">  Prepare your Mattermost database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/install-ubuntu.html">  Deploy on Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/install-docker.html">  Deploy using Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/install-tar.html">  Deploy with a tarball</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/installing-mattermost-omnibus.html">  Deploy using Omnibus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/install-kubernetes.html">  Deploy using Kubernetes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/install-rhel-8.html">  Deploy on Red Hat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/setup-nginx-proxy.html">  Set up an NGINX proxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install/setup-tls.html">  Set up TLS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/prepare-for-your-mattermost-deployment.html">  Prepare for your Mattermost deployment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../install/software-hardware-requirements.html">  Software and hardware requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/mattermost-kubernetes-operator.html">  About the Mattermost Kubernetes Operator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/manage_kubernetes.html">  Manage the Mattermost Kubernetes Operator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/admin-onboarding-tasks.html">  Administrator tasks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/architecture-overview.html">  Architecture overview</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../install/install-docker.html">Deploy using Docker</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-docker.html#install-docker">Install Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-docker.html#preview-mattermost-using-docker">Preview Mattermost using Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-docker.html#deploy-mattermost-on-docker-for-production-use">Deploy Mattermost on Docker for production use</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-docker.html#upgrade-from-mattermost-docker">Upgrade from <code class="docutils literal notranslate"><span class="pre">mattermost-docker</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-docker.html#installing-a-different-version-of-mattermost">Installing a different version of Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-docker.html#troubleshooting-your-production-deployment">Troubleshooting your production deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/implementation-plan.html">  Plan your Mattermost implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/enterprise-roll-out-checklist.html">  Enterprise roll out checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/welcome-email-to-end-users.html">  Welcome email template</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../install/install-tar.html">Deploy with a tarball</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-tar.html#download-the-latest-mattermost-server-tarball">Download the latest Mattermost Server tarball</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-tar.html#install">Install</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-tar.html#setup">Setup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-tar.html#updates">Updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-tar.html#remove-mattermost">Remove Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-tar.html#frequently-asked-questions">Frequently asked questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/deployment-guides.html">  Deployment guides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../guides/server-deployment.html">Server deployment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/deployment-overview.html"> Deployment overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/setting-up-socket-based-mattermost-database.html"> Set up a socket-based Mattermost database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/image-proxy.html"> Image proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/backup-disaster-recovery.html"> Backup and disaster recovery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/encryption-options.html"> Encryption options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/transport-encryption.html"> Configure transport encryption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/bleve-search.html"> Bleve search</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../install/installing-mattermost-omnibus.html">Deploy using Omnibus</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#add-the-mattermost-ppa-repositories">Add the Mattermost PPA repositories</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#id1">Install Mattermost Omnibus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#configure-mattermost-omnibus">Configure Mattermost Omnibus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#update-mattermost-omnibus">Update Mattermost Omnibus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#backup-and-restore">Backup and restore</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#remove-mattermost-omnibus">Remove Mattermost Omnibus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-mattermost-omnibus.html#frequently-asked-questions">Frequently asked questions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../install/install-kubernetes.html">Deploy using Kubernetes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../install/install-rhel-8.html">Deploy on Red Hat</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#install-red-hat-enterprise-linux-8">Install Red Hat Enterprise Linux 8</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#install-a-database">Install a database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#install-mattermost-server">Install Mattermost server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#configure-mattermost-server">Configure Mattermost server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#configure-tls-on-mattermost-server">Configure TLS on Mattermost server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#install-nginx-server">Install NGINX server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#configure-nginx-as-a-proxy-for-mattermost-server">Configure NGINX as a proxy for Mattermost server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/install-rhel-8.html#configure-nginx-with-ssl-and-http-2">Configure NGINX with SSL and HTTP/2</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment.html#prepare-for-your-mattermost-deployment">Prepare for your Mattermost deployment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/software-hardware-requirements.html">Software and hardware requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/mattermost-kubernetes-operator.html">About the Mattermost Kubernetes Operator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/admin-onboarding-tasks.html">Administrator tasks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/architecture-overview.html">Architecture overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/implementation-plan.html">Plan your Mattermost implementation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/enterprise-roll-out-checklist.html">Enterprise roll out checklist</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/welcome-email-to-end-users.html">Welcome email template</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment.html#deployment-guides">Deployment guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../guides/deployment.html#server-deployment">Server deployment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../guides/deployment.html#desktop-and-mobile-app-deployment">Desktop and Mobile App deployment</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="reference internal" href="../guides/deployment.html#upgrade-mattermost">Upgrade Mattermost</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="prepare-to-upgrade-mattermost.html">Prepare to upgrade Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="upgrading-mattermost-server.html">Upgrade Mattermost Server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/enterprise-install-upgrade.html">Enterprise install and upgrade</a></li>
-<li class="toctree-l3"><a class="reference internal" href="installing-license-key.html">Install a license key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="release-definitions.html">Release definitions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="important-upgrade-notes.html">Important upgrade notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="release-lifecycle.html">Release lifecycle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="extended-support-release.html">Extended Support Release</a></li>
-<li class="toctree-l3"><a class="reference internal" href="downgrading-mattermost-server.html">Downgrade Mattermost Server</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Version archive</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment.html#scale-mattermost">Scale Mattermost</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../scale/scaling-for-enterprise.html">Scale for Enterprise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../scale/high-availability-cluster.html">High availability cluster</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../scale/elasticsearch.html">Elasticsearch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../scale/performance-monitoring.html">Performance monitoring</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../scale/performance-alerting.html">Mattermost performance alerting guide</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment.html#troubleshooting-guides">Troubleshooting guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/troubleshooting.html">General troubleshooting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/high-scale-troubleshoot.html">Troubleshooting your high scale deployment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/mobile-troubleshoot.html">Troubleshooting mobile applications</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/trouble-postgres.html">PostgreSQL installation troubleshooting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/trouble_mysql.html">MySQL installation troubleshooting</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment.html#changelogs">Changelogs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/self-managed-changelog.html">Mattermost self-hosted</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/legacy-self-hosted-changelog.html">Mattermost legacy self-hosted</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/cloud-changelog.html">Mattermost Cloud</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/mobile-app-changelog.html">Mobile apps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/desktop-app-changelog.html">Desktop apps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/deprecated-features.html">Deprecated features</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment.html#additional-server-install-guides">Additional server install guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../install/deploying-team-edition-on-bitnami.html">Deploy Mattermost on Bitnami</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/setting-up-aws-elastic-beanstalk-docker.html">AWS Elastic Beanstalk Docker setup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/installing-team-edition-helm-chart.html">Install Mattermost Team Edition in GitLab Helm Chart</a></li>
-<li class="toctree-l3"><a class="reference internal" href="open-source-components.html">Open source components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../guides/desktop-mobile-app-deployment.html">Desktop and mobile app deployment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/desktop-app.html">Desktop app deployment guide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/desktop-msi-installer-and-group-policy-install.html">Desktop MSI installer and group policy installation guides (beta)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/desktop-custom-dictionaries.html">Desktop App custom dictionaries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/desktop-app-managed-resources.html">Desktop managed resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/use-prebuilt-mobile-apps.html">Using Mattermost’s pre-built mobile apps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/mobile-testing-notifications.html">Testing push notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/mobile-overview.html">Deploy Mattermost mobile apps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/mobile-hpns.html">Mobile push notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/build-custom-mobile-apps.html">Building and distributing your own custom Mattermost mobile apps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/deploy-mobile-apps-using-emm-provider.html">Deploying mobile apps using an EMM provider</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/mobile-appconfig.html">AppConfig for EMM solutions with Mattermost Mobile Apps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/consider-mobile-vpn-options.html">Mobile VPN options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/mobile-faq.html">Mobile apps FAQ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/client-side-data.html">Client-side data storage FAQ</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/administration.html">Mattermost administration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/administration.html#get-started">Get started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../deploy/deploy-mattermost-apps.html">  Deploy Mattermost Apps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/configure-app-framework.html"> Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/deploy-http.html"> HTTP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/deploy-aws.html"> AWS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/package-aws.html"> Package Apps for AWS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/deploy-openfaas.html"> OpenFaaS</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../guides/upgrade-mattermost.html">  Upgrade Mattermost</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="prepare-to-upgrade-mattermost.html"> Prepare to upgrade Mattermost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upgrading-mattermost-server.html"> Upgrade Mattermost Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/enterprise-install-upgrade.html"> Enterprise install and upgrade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installing-license-key.html"> Install a license key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release-definitions.html"> Release definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="important-upgrade-notes.html"> Important upgrade notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release-lifecycle.html"> Release lifecycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extended-support-release.html"> Extended Support Release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="downgrading-mattermost-server.html"> Downgrade Mattermost Server</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Version archive</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scale-mattermost.html">  Scale Mattermost</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scaling-for-enterprise.html"> Scale for Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/high-availability-cluster.html"> High availability cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/elasticsearch.html"> Elasticsearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/performance-monitoring.html"> Performance monitoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/performance-alerting.html"> Mattermost performance alerting guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/deployment-troubleshooting.html">  Deployment troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../install/troubleshooting.html">  General troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/high-scale-troubleshoot.html">  Troubleshooting your high scale deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/mobile-troubleshoot.html">  Troubleshooting mobile applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/trouble-postgres.html">  PostgreSQL installation troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/trouble_mysql.html">  MySQL installation troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/changelogs.html">  Changelogs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/mattermost-changelog.html">  Mattermost changelog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/legacy-self-hosted-changelog.html">  Mattermost legacy self-hosted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/legacy-cloud-changelog.html">  Mattermost legacy Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/mobile-app-changelog.html">  Mobile apps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/desktop-app-changelog.html">  Desktop app</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/deprecated-features.html">  Deprecated features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/additional-server-installation-guides.html">  Additional server installation guides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../install/deploying-team-edition-on-bitnami.html">  Deploy Mattermost on Bitnami</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/setting-up-aws-elastic-beanstalk-docker.html">  AWS Elastic Beanstalk Docker setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../install/installing-team-edition-helm-chart.html">  Install Mattermost Team Edition in GitLab Helm Chart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="open-source-components.html">  Open source components</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/administration.html">Manage Mattermost</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/get-started-with-administration.html">Get started</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../configure/optimize-your-workspace.html">Optimize your workspace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/configuration-settings.html">Mattermost configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/self-hosted-account-settings.html">Self-hosted edition and license</a></li>
@@ -326,7 +259,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../configure/site-configuration-settings.html">Site configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/authentication-configuration-settings.html">Authentication configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/plugins-configuration-settings.html">Plugins configuration settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../configure/product-configuration-settings.html">Product configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/integrations-configuration-settings.html">Integrations configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/compliance-configuration-settings.html">Compliance configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/experimental-configuration-settings.html">Experimental configuration settings</a></li>
@@ -346,22 +278,43 @@
 <li class="toctree-l3"><a class="reference internal" href="../comply/electronic-discovery.html">eDiscovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/compliance-monitoring.html">Compliance monitoring</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/compliance-export.html">Compliance export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../comply/legal-hold.html">Legal hold</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/data-retention-policy.html">Data retention tools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/custom-terms-of-service.html">Custom terms of service</a></li>
 <li class="toctree-l3"><a class="reference internal" href="notify-admin.html">Notify Admin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../guides/administration.html#advanced-user-management">Advanced user management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../guides/administration.html#advanced-workspace-management">Advanced workspace management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/ad-ldap-groups-synchronization.html">AD/LDAP groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/managing-team-channel-membership-using-ad-ldap-sync-groups.html">Use AD/LDAP synchronized groups to manage team or private channel membership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/guest-accounts.html">Guest accounts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/sso-saml.html">SAML Single Sign-On</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-okta.html">Okta SAML Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-onelogin.html">OneLogin SAML Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-adfs.html">Microsoft ADFS SAML Configuration for Windows Server 2012</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-adfs-msws2016.html">Microsoft ADFS SAML Configuration for Windows Server 2016</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-keycloak.html">Keycloak SAML Configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/administration.html#cloud-workspace-management">Cloud workspace management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/sso-saml-technical.html">SAML Single-Sign-On: technical documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/shared-channels.html">Shared channels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/statistics.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/in-product-notices.html">In-product notices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/user-satisfaction-surveys.html">User satisfaction surveys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/health-checks.html">Health check</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/announcement-banner.html">Announcement banner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/bulk-export-tool.html">Bulk export tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/cloud-workspace-management.html">Cloud workspace management</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../manage/cloud-billing.html">Mattermost Cloud billing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/workspace-usage.html">Workspace usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/cloud-data-export.html">Workspace migration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/cloud-data-residency.html">Cloud data residency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/cloud-ip-filtering.html">Cloud IP Filtering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/cloud-byok.html">Cloud Bring Your Own Key (BYOK)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/administration.html#self-hosted-administration">Self-hosted administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/self-hosted-administration.html">Self-hosted administration</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../manage/self-hosted-billing.html">Mattermost self-hosted billing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/error-codes.html">Mattermost error codes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/configuation-in-a-database.html">Store configuration in the database</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/bulk-loading-data.html">Bulk loading data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/smtp-email.html">SMTP email setup</a></li>
@@ -370,16 +323,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../configure/configuring-cloudfront-to-host-mattermost-static-assets.html">Configure CloudFront to host static assets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/using-outbound-proxy.html">Use an outbound proxy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/migrating-to-mattermost.html">Migration guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../onboard/migrate-from-slack.html">Migrate from Slack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../deploy/postgres-migration.html">Migration from MySQL to PostgreSQL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/enabling-chinese-japanese-korean-search.html">Chinese, Japanese, and Korean search</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/customizing-mattermost.html">Customize Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../comply/audit-log.html">Audit logging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../manage/logging.html">Mattermost logging</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/embedded-json-audit-log-schema.html">JSON audit log schema</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/ssl-client-certificate.html">SSL client certificate setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/certificate-based-authentication.html">Certificate-based authentication</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/telemetry.html">Manage telemetry</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/administration.html#other-resources">Other resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/other-administration-resources.html">Other resources</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/convert-oauth20-service-providers-to-openidconnect.html">Convert OAuth 2.0 providers to OpenID Connect</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/generating-support-packet.html">Generate a support packet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/mmctl-command-line-tool.html">mmctl command line tool</a></li>
@@ -390,248 +345,104 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/welcome-to-mattermost.html">Welcome to Mattermost</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/welcome-to-mattermost.html#access-your-mattermost-workspace">Access your Mattermost workspace</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/log-in.html">Log in to Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/keyboard-shortcuts.html">Keyboard shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/log-out.html">Log out of Mattermost</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/use-mattermost.html">Use Mattermost</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/collaborate.html">Connect and collaborate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/access-your-workspace.html">Access your Mattermost workspace</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/install-desktop-app.html">Install the desktop app</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/install-ios-app.html">Install the iOS mobile app</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/install-android-app.html">Install the Android mobile app</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/log-out.html">Log out of Mattermost</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/welcome-to-mattermost.html#mattermost-basics">Mattermost basics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/get-started-mattermost-channels.html">Get started with Mattermost Channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html">Get started with the Mattermost Playbooks plugin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-boards.html">Get started with Mattermost Boards</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/manage-custom-groups.html">Manage custom groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/about-teams.html">About teams</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/team-settings.html">Team settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/team-keyboard-shortcuts.html">Team keyboard shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/about-user-roles.html">About user roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/add-people.html">Add people to your workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/organize-using-teams.html">Organize using teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/team-settings.html">Team settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/team-keyboard-shortcuts.html">Team keyboard shortcuts</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/welcome-to-mattermost.html#customize-your-mattermost-experience">Customize your Mattermost experience</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/manage-your-profile.html">Manage your Mattermost profile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/set-your-status-availability.html">Set your status and availability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/customize-your-theme.html">Customize your Mattermost theme</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/customize-desktop-app-experience.html">Customize your desktop app experience</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/manage-multiple-server-connections.html">Manage multiple app server connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/organize-using-custom-user-groups.html">Organize using custom user groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/invite-people.html">Invite people</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/learn-about-roles.html">Learn about Mattermost roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/collaborate-within-channels.html">Collaborate within channels</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/channel-types.html">Channel types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/channel-naming-conventions.html">Channel naming conventions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/channel-header-purpose.html">Communicate a channel's focus and scope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/create-channels.html">Create channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/rename-channels.html">Rename channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/convert-public-channels.html">Convert public channels to private channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/convert-group-messages.html">Convert group messages to private channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/join-leave-channels.html">Join and leave channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/make-calls.html">Make calls in Mattermost</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/manage-channel-members.html">Manage channel members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/browse-channels.html">Browse channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/navigate-between-channels.html">Navigate between channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/favorite-channels.html">Mark channels as favorites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/mark-channels-unread.html">Mark channels as unread</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/archive-unarchive-channels.html">Archive and unarchive channels</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/welcome-to-mattermost.html#mattermost-interface-changes">Mattermost interface changes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/what-changed-in-v70.html">What changed in Mattermost v7.0?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/what-changed-in-v60.html">What changed in Mattermost v6.0?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../welcome/whats-new-in-v72.html">What changed in Mattermost Boards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/communicate-with-messages.html">Communicate with messages and threads</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/send-messages.html">Send messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/reply-to-messages.html">Reply to messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/react-with-emojis-gifs.html">React with emojis and GIFs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/organize-conversations.html">Organize conversations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/mark-messages-unread.html">Mark messages as unread</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/forward-messages.html">Forward messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/share-links.html">Share links to channels and messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/save-pin-messages.html">Save and pin messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/message-reminders.html">Set message reminders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/search-for-messages.html">Search for messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/format-messages.html">Format messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/message-priority.html">Set message priority</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/mention-people.html">Mention people</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/share-files-in-messages.html">Share files in messages</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/keyboard-shortcuts.html">Keyboard shortcuts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/keyboard-accessibility.html">Keyboard accessibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/run-slash-commands.html">Run slash commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/built-in-slash-commands.html">Built-in-slash-commands</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/channels.html">Mattermost Channels</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/channels.html#channels-messages-and-conversations">Channels, messages, and conversations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/channels.html#work-with-channels">Work with channels</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../channels/channel-types.html">Channel types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/create-channels.html">Create channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/channel-naming-conventions.html">Channel naming conventions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/rename-channels.html">Rename a channel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/convert-public-channels.html">Convert public channels to private</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/join-leave-channels.html">Join and leave channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/make-calls.html">Start a call</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/manage-channel-members.html">Manage channel members</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/browse-channels.html">Browse channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/navigate-between-channels.html">Navigate between channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/favorite-channels.html">Mark channels as favorites</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/mark-channels-unread.html">Mark channels as unread</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/customize-your-channel-sidebar.html">Customize your channel sidebar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/archive-unarchive-channels.html">Archive and unarchive channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/set-channel-preferences.html">Set channel preferences</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/channels-settings.html">Channels settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/interact-with-channels.html">Interact with channels</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/channels.html#work-with-messages">Work with messages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../channels/send-messages.html">Send messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/message-priority.html">Set message priority</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/reply-to-messages.html">Reply to messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/organize-conversations.html">Organize conversations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/react-to-messages.html">React to messages using emojis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/mention-people.html">Mention people</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/mark-messages-unread.html">Mark messages as unread</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/format-messages.html">Format messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/share-files-in-messages.html">Share files in messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/forward-messages.html">Forward messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/share-links.html">Share links to messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/save-pin-messages.html">Save and pin messages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/message-reminders.html">Set message reminders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/search-for-messages.html">Search for messages</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/channels.html#keyboard-accessibility">Keyboard accessibility</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../channels/keyboard-accessibility.html">Keyboard accessibility in Channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/keyboard-shortcuts-for-channels.html">Keyboard shortcuts for Channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/run-slash-commands.html">Run slash commands</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/channels.html#extend-channels-functionality">Extend Channels functionality</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../channels/extend-channels-functionality.html">Extend functionality with integrations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../channels/collaborate-using-mattermost-for-microsoft-teams.html">Collaborate using Mattermost for MS Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/extend-mattermost-with-integrations.html">Extend Mattermost with integrations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/collaborate-within-connected-microsoft-teams.html">Collaborate within connected MS Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/collaborate-within-embedded-microsoft-teams.html">Collaborate within embedded MS Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaborate/use-mattermost-google-calendar-plugin.html">Use the Mattermost Google Calendar plugin</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/playbooks.html">Mattermost Playbooks plugin</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/overview.html">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#what-s-a-playbook">What’s a playbook?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#what-s-a-run">What’s a run?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#keywords">Keywords</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#welcome-message">Welcome message</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#tasks-and-checklists">Tasks and checklists</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#status-updates">Status updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/overview.html#retrospective">Retrospective</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/repeatable-processes.html">Build repeatable processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/learn-about-playbooks.html">Learn about playbooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/work-with-playbooks.html">Work with playbooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/work-with-runs.html">Work with runs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/work-with-tasks.html">Work with tasks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/notifications-and-updates.html">Work with notifications and updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/metrics-and-goals.html">Work with metrics and goals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/share-and-collaborate.html">Share and collaborate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/interact-with-playbooks.html">Interact with playbooks</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/work-with-playbooks.html">Work with playbooks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#templates">Templates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#edit-a-playbook">Edit a playbook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#make-checklists">Make checklists</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#multiple-runs-in-a-channel">Multiple runs in a channel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#status-updates">Status updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#keywords">Keywords</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#actions">Actions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#run-metrics">Run metrics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-playbooks.html#webhooks">Webhooks</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/work-with-runs.html">Work with runs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-runs.html#follow-and-participate">Follow and participate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-runs.html#view-run-details">View run details</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-runs.html#runs-and-channel-behavior">Runs and channel behavior</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-runs.html#send-outgoing-webhooks">Send outgoing webhooks</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/work-with-tasks.html">Work with tasks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-tasks.html#tasks-and-due-dates">Tasks and due dates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-tasks.html#task-actions">Task actions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/work-with-tasks.html#task-inbox">Task inbox</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/notifications-and-updates.html">Work with notifications and updates</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/notifications-and-updates.html#status-updates">Status updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/notifications-and-updates.html#request-an-update">Request an update</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/notifications-and-updates.html#follow-runs-and-playbooks">Follow runs and playbooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/notifications-and-updates.html#daily-digest">Daily digest</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/notifications-and-updates.html#playbook-to-do">Playbook to do</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/metrics-and-goals.html">Work with metrics and goals</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/metrics-and-goals.html#configure-retrospectives-before-a-run">Configure retrospectives before a run</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/metrics-and-goals.html#metrics">Metrics</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/share-and-collaborate.html">Share and collaborate</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/share-and-collaborate.html#playbook-roles">Playbook roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/share-and-collaborate.html#playbooks-permissions">Playbooks permissions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/share-and-collaborate.html#restrict-who-can-create-playbooks">Restrict who can create playbooks</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../playbooks/interact-with-playbooks.html">Interact with playbooks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/interact-with-playbooks.html#slash-commands">Slash commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../playbooks/interact-with-playbooks.html#api-documentation">API documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Customize your preferences</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/manage-your-notifications.html">Manage your notifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/customize-your-theme.html">Customize your Mattermost theme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/customize-your-channel-sidebar.html">Customize your channel sidebar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/manage-your-profile.html">Manage your profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/manage-your-security-preferences.html">Manage your security preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/set-your-status-availability.html">Set your status &amp; availability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/manage-your-display-options.html">Manage your display options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/manage-your-sidebar-options.html">Manage your sidebar options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/manage-advanced-options.html">Manage advanced options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/customize-desktop-app-experience.html">Customize your desktop app experience</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../preferences/connect-multiple-workspaces.html">Connect to multiple workspaces</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/boards.html">Mattermost Boards</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../boards/overview.html">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/overview.html#what-s-a-board">What’s a board?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/overview.html#what-s-a-card">What’s a card?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/overview.html#access-your-boards">Access your boards</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/overview.html#focalboard-personal-server">Focalboard personal server</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/work-with-boards.html">Work with boards</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-boards.html#add-new-boards">Add new boards</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-boards.html#choose-a-board-template">Choose a board template</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-boards.html#edit-board-templates">Edit board templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/work-with-cards.html">Work with cards</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#card-descriptions">Card descriptions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#card-properties">Card properties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#add-properties">Add properties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#rename-a-property">Rename a property</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#change-a-property-type">Change a property type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#delete-a-property">Delete a property</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#define-a-select-or-multi-select-property">Define a “Select” or “Multi-select” property</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#toggle-properties-shown-on-a-board">Toggle properties shown on a board</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#attach-files">Attach files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#card-badges">Card badges</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#comment-on-a-card">Comment on a card</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#mention-people">Mention people</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#receive-updates">Receive updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#search-cards">Search cards</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-cards.html#card-templates">Card templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/work-with-views.html">Work with views</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-views.html#board-view">Board view</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-views.html#table-view">Table view</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-views.html#gallery-view">Gallery view</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/work-with-views.html#calendar-view">Calendar view</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/groups-filter-sort.html">Work with groups, filter, and sort</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/groups-filter-sort.html#group-cards">Group cards</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/groups-filter-sort.html#filters">Filters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/groups-filter-sort.html#sorting-cards">Sorting cards</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/calculations.html">Work with calculations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/share-and-collaborate.html">Share and collaborate</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/share-and-collaborate.html#board-permissions">Board permissions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/share-and-collaborate.html#roles">Roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/share-and-collaborate.html#guest-accounts">Guest accounts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/share-and-collaborate.html#share-a-board">Share a board</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/share-and-collaborate.html#share-cards-on-channels">Share cards on Channels</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/migrate-to-boards.html">Import, export, and migrate</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-and-export-a-board-archive">Import and export a board archive</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#export-to-csv">Export to CSV</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-and-export-from-other-applications">Import and export from other applications</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-from-asana">Import from Asana</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-from-notion">Import from Notion</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-from-jira">Import from Jira</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-from-trello">Import from Trello</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/migrate-to-boards.html#import-from-todoist">Import from Todoist</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/navigate-boards.html">Navigate boards</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#link-a-board-to-a-channel">Link a board to a channel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#unlink-a-board-from-a-channel">Unlink a board from a channel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#sidebar-categories">Sidebar categories</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#drag-and-drop">Drag and drop</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#manage-boards-on-the-sidebar">Manage boards on the sidebar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#find-a-board">Find a board</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/navigate-boards.html#team-sidebar">Team sidebar</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../boards/boards-settings.html">Boards settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../boards/boards-settings.html#set-language">Set language</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/boards-settings.html#random-emoji-icons">Random emoji icons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../boards/boards-settings.html#product-tour">Product tour</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference external" href="https://developers.mattermost.com/">Mattermost for developers</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://developers.mattermost.com/">Develop with Mattermost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/get-help.html">Get help with Mattermost</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/community-chat.html">Community chat</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://handbook.mattermost.com/">Mattermost Handbook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/contribute-to-documentation.html">Contribute to this site</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/contribute-to-documentation.html#how-to-get-started">How to get started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/contribute-to-documentation.html#first-time-contributor">First time contributor?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/contribute-to-documentation.html#where-to-find-more-information">Where to find more information</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/community-chat.html">Join our community</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://handbook.mattermost.com/">Learn how we work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/contribute-to-documentation.html">Contribute to this documentation</a></li>
 </ul>
 
             
@@ -668,6 +479,8 @@
     
       <li><a href="../guides/deployment.html">Deploy Mattermost</a> &raquo;</li>
     
+      <li><a href="../guides/upgrade-mattermost.html">Upgrade Mattermost</a> &raquo;</li>
+    
     <li>Version Archive</li>
     <li class="wy-breadcrumbs-aside">
       <div class="search__icon">
@@ -685,17 +498,17 @@
           <article data-swiftype-index=false class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div data-swiftype-index=true itemprop="articleBody" role="main">
             
-  <div class="section" id="version-archive">
-<h1><a class="toc-backref" href="#contents">Version Archive</a><a class="headerlink" href="#version-archive" title="Permalink to this headline"> </a></h1>
+  <section id="version-archive">
+<h1><a class="toc-backref" href="#on-this-page">Version Archive</a><a class="headerlink" href="#version-archive" title="Permalink to this headline"></a></h1>
 <div class="mm-badge"><p><img alt="plans-img" src="../_images/flag_icon.svg" /> Available on <a class="reference external" href="https://mattermost.com/pricing/">all plans</a></p>
 <p><img alt="deployment-img" src="../_images/deployment_icon.svg" /> <a class="reference external" href="https://mattermost.com/deploy/">self-hosted</a> deployments</p>
 </div><p>If you want to check that the version of Mattermost you are installing is the official, unmodified version, compare the SHA-265 checksum or the file’s GPG signature with the one published in this version archive. To verify the GPG signature of a Mattermost release, use the public key stored in Keybase: <a class="reference external" href="https://keybase.io/mattermost">https://keybase.io/mattermost</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Support for Mattermost Server v7.1 <a class="reference internal" href="extended-support-release.html"><span class="doc">Extended Support Release</span></a> has come to the end of its life cycle on May 15, 2023. Upgrading to Mattermost Server v7.8 <a class="reference internal" href="extended-support-release.html"><span class="doc">Extended Support Release</span></a> or later is required.</p>
+<p>Support for Mattermost Server v8.1 <a class="reference internal" href="extended-support-release.html"><span class="doc">Extended Support Release</span></a> is coming to the end of its life cycle on May 15, 2024. Upgrading to Mattermost Server v8.1 <a class="reference internal" href="extended-support-release.html"><span class="doc">Extended Support Release</span></a> or later is recommended.</p>
 </div>
-<div class="contents topic" id="contents">
-<p class="topic-title">Contents</p>
+<div class="contents topic" id="on-this-page">
+<p class="topic-title">On this page</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#version-archive" id="id1">Version Archive</a></p>
 <ul>
@@ -705,19 +518,61 @@
 </li>
 </ul>
 </div>
-<div class="section" id="mattermost-enterprise-edition">
-<h2><a class="toc-backref" href="#contents">Mattermost Enterprise Edition</a><a class="headerlink" href="#mattermost-enterprise-edition" title="Permalink to this headline"> </a></h2>
+<section id="mattermost-enterprise-edition">
+<h2><a class="toc-backref" href="#on-this-page">Mattermost Enterprise Edition</a><a class="headerlink" href="#mattermost-enterprise-edition" title="Permalink to this headline"></a></h2>
 <dl class="simple">
-<dt>Mattermost Enterprise Edition v8.0.0 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.0.0/mattermost-8.0.0-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.0.0/mattermost-8.0.0-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">e5ac1c852c595ed350d970fb7e2e674205944af8097e98829e96b38ab19a6618</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.0.0/mattermost-8.0.0-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.0.0/mattermost-8.0.0-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v9.5.1 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-5-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">177d8d5ae94a521a321cf0a60828a1e876fdf96da2b85fccc72f544ab829d693</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Enterprise Edition v7.10.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-10-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.10.4/mattermost-7.10.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.10.4/mattermost-7.10.4-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">132d9c1fd0a7422f03e40bc4f095a4eaf4da470208af8d51d5e853581f2154c3</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.10.4/mattermost-7.10.4-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.10.4/mattermost-7.10.4-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v9.4.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-4-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">e6a5c9cc9ce6432e1fcf50f20e42eed9da8161831afe699b4b803577fdb486b5</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.3.2 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-3-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">b5686e51421a07698edfe024d3f03b0e9b405f882ba7d622232ba6a6db22da34</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.2.6 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-2-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.2.6/mattermost-9.2.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.2.6/mattermost-9.2.6-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">65d9cdbc10e2bd28b723fcffb6a723140013b6d7ad3e0cd9f4a3d68d32442575</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.2.6/mattermost-9.2.6-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.2.6/mattermost-9.2.6-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.1.5 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v9-1-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.1.5/mattermost-9.1.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.1.5/mattermost-9.1.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">1cf5c7d68a837d746fdb30f2fe88abbb34ca0badd9f4b297d18988c691f47b35</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.1.5/mattermost-9.1.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.1.5/mattermost-9.1.5-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.0.5 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v9-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.0.5/mattermost-9.0.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.0.5/mattermost-9.0.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">5ed5118cb6bdb089fd47a087eea75746044acc3716162d7c1c40beaa6468941c</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.0.5/mattermost-9.0.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.0.5/mattermost-9.0.5-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v8.1.10 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-1-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">ab1156fcff8835c30a4b368666d38eaf5322fe096065e88abd0f98374a97d3bd</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v8.0.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.0.4/mattermost-8.0.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.0.4/mattermost-8.0.4-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">185e57bba4bcefd316cf1f83cfc73556c0646d6ea935e11be53ee1881817bf74</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.0.4/mattermost-8.0.4-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.0.4/mattermost-8.0.4-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v7.10.5 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-10-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.10.5/mattermost-7.10.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.10.5/mattermost-7.10.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">5937103d7c7d298343740f9c5f8e87595d829eaf288d4aec834ce7e087a047de</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.10.5/mattermost-7.10.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.10.5/mattermost-7.10.5-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Enterprise Edition v7.9.6 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-9-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.9.6/mattermost-7.9.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -726,10 +581,10 @@
 <li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.9.6/mattermost-7.9.6-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.9.6/mattermost-7.9.6-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Enterprise Edition v7.8.8 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-8-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.8.8/mattermost-7.8.8-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.8.8/mattermost-7.8.8-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">573cf678872f8edb347bff84510ce5b39c8f825702b73699af45d47f6072d6c3</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.8.8/mattermost-7.8.8-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.8.8/mattermost-7.8.8-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v7.8.15 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-8-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.8.15/mattermost-7.8.15-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.8.15/mattermost-7.8.15-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">778328d4c2716f10a8b2965d071d6f1c68a0ee98e046dd41669ba460d518170a</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.8.15/mattermost-7.8.15-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.8.15/mattermost-7.8.15-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Enterprise Edition v7.7.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-7-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.7.4/mattermost-7.7.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -1184,22 +1039,64 @@
 </ul>
 </dd>
 </dl>
-</div>
-<div class="section" id="mattermost-team-edition">
-<h2><a class="toc-backref" href="#contents">Mattermost Team Edition</a><a class="headerlink" href="#mattermost-team-edition" title="Permalink to this headline"> </a></h2>
+</section>
+<section id="mattermost-team-edition">
+<h2><a class="toc-backref" href="#on-this-page">Mattermost Team Edition</a><a class="headerlink" href="#mattermost-team-edition" title="Permalink to this headline"></a></h2>
 <p>The open source Mattermost Team Edition is functionally identical to the commercial Mattermost Enterprise Edition in its free “team mode”, but there is no ability to unlock enterprise features. It deploys as single Linux binary with PostgreSQL or MySQL under an MIT license.</p>
 <p>We generally recommend installing Enterprise Edition, even if you don’t currently need a license. This provides the flexibility to seamlessly unlock Enterprise features should you need them. However, if you only want to install software with a fully open source code base, then Team Edition is the best choice for you.</p>
 <dl class="simple">
-<dt>Mattermost Team Edition v8.0.0 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.0.0/mattermost-team-8.0.0-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.0.0/mattermost-team-8.0.0-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">46b44a2a6b8d7a2bad4553e40a565f1eb3e0b86d60903d97ec4d2f37f68effb2</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.0.0/mattermost-team-8.0.0-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.0.0/mattermost-team-8.0.0-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v9.5.1 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-5-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">17e73b98a6b874b90a4da7ac5b7cead9d0892ec82d066f692c2aefb639cf658e</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Team Edition v7.10.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-10-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.10.4/mattermost-team-7.10.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.10.4/mattermost-team-7.10.4-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">744fae31e3cc59b8d56accd064f2605a4d165e740fcf4e224cd1693a9ff4d2eb</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.10.4/mattermost-team-7.10.4-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.10.4/mattermost-team-7.10.4-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v9.4.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-4-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">28ea356906f48b1c473655f5cc9bb216c59f8e1623662a3c3fbba207a4d4adb9</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.3.2 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-3-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">3e392777114ae1315966383a63ca636b1ab7971386fba413cc7adfcd53d4b5d0</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.2.6 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-2-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.2.6/mattermost-team-9.2.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.2.6/mattermost-team-9.2.6-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">b5ba2edac3d547c2929e46a1dbdf7f7b0f5de826a30d1c59b268a79e9cb6804b</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.2.6/mattermost-team-9.2.6-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.2.6/mattermost-team-9.2.6-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.1.5 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v9-1-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.1.5/mattermost-team-9.1.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.1.5/mattermost-team-9.1.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">0e876e1ab71a2a2035881371e0098a032b4ac7ac6dc4cabd8b8082f4357d8053</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.1.5/mattermost-team-9.1.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.1.5/mattermost-team-9.1.5-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.0.5 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v9-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.0.5/mattermost-team-9.0.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.0.5/mattermost-team-9.0.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">2aa5abe8dc65d6083c719ee0824e87f76d49d68c8ba8b6937c24295bfcc43dfc</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.0.5/mattermost-team-9.0.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.0.5/mattermost-team-9.0.5-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v8.1.10 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-1-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">9b0c5354931f11326d1f22a283cc37501be726cd951c00d4fb64afb37e212f8c</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v8.0.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.0.4/mattermost-team-8.0.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.0.4/mattermost-team-8.0.4-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">2c1dbff642b429abf4af39d32ea047a42ada8c57ebbf3cd9a3617243e4807ccf</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.0.4/mattermost-team-8.0.4-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.0.4/mattermost-team-8.0.4-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v7.10.5 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-10-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.10.5/mattermost-team-7.10.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.10.5/mattermost-team-7.10.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">e09c4e7d7134e94fb06e92bda041dc8c9d122649052b27c380b20ac591faff95</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.10.5/mattermost-team-7.10.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.10.5/mattermost-team-7.10.5-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Team Edition v7.9.6 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-9-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.9.6/mattermost-team-7.9.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -1208,10 +1105,10 @@
 <li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.9.6/mattermost-team-7.9.6-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.9.6/mattermost-team-7.9.6-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Team Edition v7.8.8 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-8-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.8.8/mattermost-team-7.8.8-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.8.8/mattermost-team-7.8.8-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">87f7115d8527d9b5ef215f10bd414f91c0816b84c215cac5d51628fe1977db40</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.8.8/mattermost-team-7.8.8-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.8.8/mattermost-team-7.8.8-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v7.8.15 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-8-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.8.15/mattermost-team-7.8.15-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/7.8.15/mattermost-team-7.8.15-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">1a4351b1c2fdf65ca575f2a0d4df0d78f3aef17bb09ed16080e1afc4c74a33b6</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/7.8.15/mattermost-team-7.8.15-linux-amd64.tar.gz.sig">https://releases.mattermost.com/7.8.15/mattermost-team-7.8.15-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Team Edition v7.7.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v7-7-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/7.7.4/mattermost-team-7.7.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -1706,35 +1603,28 @@
 </ul>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
            
           </article>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../scale/scaling-for-enterprise.html" class="btn btn-neutral float-right" title="Scaling for Enterprise" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="downgrading-mattermost-server.html" class="btn btn-neutral float-left" title="Downgrade Mattermost Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../guides/scale-mattermost.html" class="btn btn-neutral float-right" title="Scale Mattermost" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2015-2023 Mattermost.
-
-    </p>
+    <p>&#169; Copyright 2015-2024 Mattermost.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
@@ -1776,7 +1666,7 @@
             <span aria-hidden="true">×</span>
         </a>
 	    <div class="notification-bar__wrapper">
-		    <img src="../_static/images/notification-bar/icon-megaphone.svg" alt="" class="notification-bar__icon"><a href="https://mattermost.com/blog/mattermost-v8-0-is-now-available/" target="_blank" class="notification-bar__link">Mattermost Version 8.0 is Now Available »</a>
+		    <img src="../_static/images/notification-bar/icon-green-rocket.svg" alt="" class="notification-bar__icon"><a href="https://mattermost.com/blog/inc-recognizes-mattermost-as-a-power-partner/" target="_blank" class="notification-bar__link">Inc. Recognizes Mattermost as a 2023 'Power Partner'!</a>
 		</div>
     </div>
 </div>
@@ -1853,7 +1743,12 @@
 										</li>
 										<li class="sub-menu__links--single">
 											<a href="https://mattermost.com/solutions/use-cases/accelerate-productivity/" data-ol-has-click-handler="">
-											Process &amp; Decision Optimization
+											Decision Optimization
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/open-source/" data-ol-has-click-handler="">
+											Open Source
 											</a>
 										</li>
 									</ul>
@@ -1978,7 +1873,7 @@
 												</a>
 											</li>	
 											<li class="sub-menu__links--single">
-												<a href="https://academy.mattermost.com/p/mattermost-end-user-onboarding" data-ol-has-click-handler="">
+												<a href="https://academy.mattermost.com/" data-ol-has-click-handler="">
 												Academy
 												</a>
 											</li>
@@ -1993,7 +1888,7 @@
 												</a>
 											</li>
 											<li class="sub-menu__links--single">
-												<a href="https://docs.mattermost.com/administration/changelog.html" data-ol-has-click-handler="">
+												<a href="https://docs.mattermost.com/guides/changelogs.html" data-ol-has-click-handler="">
 													Release Notes
 												</a>
 											</li>
@@ -2080,7 +1975,7 @@
           <script src="../_static/doctools.js"></script>
           <script src="../_static/clipboard.min.js"></script>
           <script src="../_static/copybutton.js"></script>
-          <script src="../_static/myscript.js?version=v16"></script>
+          <script src="../_static/myscript.js?version=v19"></script>
       
       <script type="text/javascript" src="../_static/js/theme.js"></script>
 
