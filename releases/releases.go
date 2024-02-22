@@ -20,8 +20,8 @@ import (
 const releasesURL = "https://docs.mattermost.com/upgrade/version-archive.html"
 
 var (
-	absEnt  = xmlpath.MustCompile(`//div[@id='mattermost-enterprise-edition']/dl/dt`)
-	absTeam = xmlpath.MustCompile(`//div[@id='mattermost-team-edition']/dl/dt`)
+	absEnt  = xmlpath.MustCompile(`//section[@id='mattermost-enterprise-edition']/dl/dt`)
+	absTeam = xmlpath.MustCompile(`//section[@id='mattermost-team-edition']/dl/dt`)
 
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)
