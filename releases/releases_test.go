@@ -2,7 +2,7 @@ package releases
 
 import (
 	"bytes"
-	"io/ioutil"
+	"os"
 	"testing"
 
 	"github.com/blang/semver"
@@ -13,7 +13,7 @@ import (
 )
 
 func init() {
-	body, err := ioutil.ReadFile("testdata/version-archive.html")
+	body, err := os.ReadFile("testdata/version-archive.html")
 	if err != nil {
 		panic(err)
 	}
@@ -31,35 +31,28 @@ func init() {
 
 const (
 	// Latest version found in testdata/version-archive.html.
-	fixtureVersion = "9.5.1"
+	fixtureVersion = "9.9.1"
 
 	// The corresponding SHA256 checksums.
-	entChecksum  = "177d8d5ae94a521a321cf0a60828a1e876fdf96da2b85fccc72f544ab829d693"
-	teamChecksum = "17e73b98a6b874b90a4da7ac5b7cead9d0892ec82d066f692c2aefb639cf658e"
+	entChecksum  = "d2303a5e54eb7308081022f72c9c15c2e8206966c7c9048d2911dc71a3972493"
+	teamChecksum = "24e862acf3a46ad52db7f24581357c4623faa391c1148d5ca7ed17c1228d081c"
 )
 
-func TestFindLatestTeamRelease(t *testing.T) {
+func TestFindLatestRelease(t *testing.T) {
 	t.Parallel()
 	assert := assert.New(t)
+	require := require.New(t)
 
 	doc, _ := get()
-	r := findLatestRelease(absTeam, doc)
-	assert.False(r.Version.Enterprise)
+	ent, team := findLatestRelease(doc)
+	require.NotNil(ent)
+	require.NotNil(team)
+	assert.True(ent.Version.Enterprise)
+	assert.False(team.Version.Enterprise)
 
 	expected, _ := semver.Parse(fixtureVersion)
-	assert.True(r.Version.EQ(expected))
-}
-
-func TestFindLatestEnterpriseRelease(t *testing.T) {
-	t.Parallel()
-	assert := assert.New(t)
-
-	doc, _ := get()
-	r := findLatestRelease(absEnt, doc)
-	assert.True(r.Version.Enterprise)
-
-	expected, _ := semver.Parse(fixtureVersion)
-	assert.True(r.Version.EQ(expected))
+	assert.True(ent.Version.EQ(expected))
+	assert.True(team.Version.EQ(expected))
 }
 
 func TestUpdateCandidate(t *testing.T) {

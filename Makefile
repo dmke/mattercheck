@@ -31,5 +31,5 @@ clean:
 
 .PHONY: update-fixture
 update-fixture:
-	curl -sSLo releases/testdata/version-archive.html \
-		https://docs.mattermost.com/upgrade/version-archive.html
+	curl -fsSLo releases/testdata/version-archive.html \
+		https://docs.mattermost.com/about/version-archive.html

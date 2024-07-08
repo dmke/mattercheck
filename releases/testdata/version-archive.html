@@ -1,145 +1,749 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="search" title="Search" href="../search.html" /><link rel="next" title="Desktop" href="desktop.html" /><link rel="prev" title="Unsupported legacy releases" href="unsupported-legacy-releases.html" />
+        <link rel="canonical" href="https://docs.mattermost.com/about/version-archive.html" />
 
-
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Version Archive &mdash; Mattermost  documentation</title>
-  
-
-  
-  <link rel="preload" as="font" href="../_static/css/fonts/fontawesome-webfont.woff2?af7ae505a9eed503f8b8e6982036873e" crossorigin>
-  <link rel="preload" href="https://p.typekit.net" crossorigin>
-  <link rel="preload" href="https://use.typekit.net" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/mytheme.css?version=v52" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/compass-icons.css" type="text/css" />
-
-  
-  
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
-    <link rel="canonical" href="https://docs.mattermost.com/upgrade/version-archive.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Scale Mattermost" href="../guides/scale-mattermost.html" />
-    <link rel="prev" title="Downgrade Mattermost Server" href="downgrading-mattermost-server.html" />
-
-  	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-K874RWM');</script>
-	<!-- End Google Tag Manager -->
-
-</head>
-
-<body class="wy-body-for-nav">
-
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K874RWM"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-   
-  <div class="wy-grid-for-nav">
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>Version archive - Mattermost documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/mattermost-global.css?v=abe83b51" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/homepage-v1.css?v=99e43440" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/copybuttons.css?v=36a7ffb6" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/compass-icons.css?v=b28d7826" />
     
-    <nav data-swiftype-index=false data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
+    
 
-          
-            <a href="../index.html" class="icon icon-home"> Mattermost
-          
 
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --font-stack: 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-stack--monospace: 'Fira Mono', 'Courier New', Courier, monospace;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style><!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i) {
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    let f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K874RWM');
+</script>
+<!-- End Google Tag Manager -->
+    
+</head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K874RWM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div data-swiftype-index=false class="notification-bar sticky-top">
+    <div class="notification-bar__content">
+        <a class="notification-bar__close" data-ol-has-click-handler="">
+            <span aria-hidden="true">×</span>
+        </a>
+	    <div class="notification-bar__wrapper">
+		    <a href="https://mattermost.com/webinar/copilot-demo-ai-enhanced-collaboration/" target="_blank" class="notification-bar__link"><img src="../_static/images/notification-bar/icon-megaphone.svg" alt="">[WEBINAR] Mattermost Copilot Demo: AI-Enhanced Collaboration</a>
+		</div>
+    </div>
 </div>
+<header class="site-header site-header--not-home" itemscope="" itemtype="https://schema.org/WebSite">
 
-          
-        </div>
+	<div class="nav-container site-header__container">
+		<div class="site-header__row">
+			<div class="site-header__col--logo">
+				<a href="/" data-ol-has-click-handler="">
+					<svg xmlns="http://www.w3.org/2000/svg" width="170" height="28" viewBox="0 0 170 28" fill="currentColor">
+						<g clip-path="url(#clip0_1211_600)">
+						  <path fill-rule="evenodd" clip-rule="evenodd" d="M37.0719 5.50971C37.8068 5.40528 38.5481 5.35188 39.2904 5.34991C40.0328 5.3491 40.7743 5.40251 41.5089 5.50971L46.2689 15.3782L51.17 5.50971C51.8264 5.39784 52.4914 5.34437 53.1573 5.34991C53.8614 5.34758 54.5645 5.40101 55.2602 5.50971L56.2326 23.63C55.5455 23.7336 54.8518 23.787 54.1569 23.7898C53.5104 23.7906 52.865 23.7371 52.2274 23.63L51.7089 10.5281L47.5014 19.584C47.2328 19.6197 46.954 19.6503 46.6667 19.6775C46.3794 19.7047 46.0904 19.7166 45.8014 19.7166C45.5515 19.7166 45.3033 19.7166 45.0534 19.6911C44.792 19.6709 44.532 19.6351 44.2748 19.584L40.3563 10.3411L39.95 23.63C39.3601 23.7346 38.7623 23.7881 38.1633 23.7898C37.5265 23.7883 36.8908 23.7349 36.2627 23.63L37.0685 5.50971H37.0719ZM162.447 12.5919H160.718L160.585 12.0615L165.56 5.70351H166.17V9.72061H169.388C169.438 9.95736 169.474 10.1969 169.495 10.438C169.512 10.6505 169.522 10.8732 169.522 11.1027C169.522 11.3322 169.512 11.5906 169.495 11.8218C169.474 12.0804 169.438 12.3375 169.388 12.5919H166.17V17.9911C166.159 18.4387 166.205 18.8858 166.304 19.3222C166.37 19.6136 166.502 19.8863 166.688 20.1195C166.853 20.3115 167.071 20.4505 167.314 20.519C167.6 20.5938 167.895 20.6292 168.191 20.6244C168.454 20.6247 168.717 20.6025 168.977 20.5581L169.657 20.4391C169.782 20.7791 169.87 21.1312 169.922 21.4897C169.972 21.8109 169.999 22.1353 170.002 22.4604C170.002 22.6542 170.002 22.8191 169.988 22.9517C169.975 23.0843 169.966 23.2135 169.949 23.3376C169.121 23.5342 168.273 23.6323 167.423 23.63C165.809 23.63 164.576 23.2532 163.725 22.4995C162.874 21.7458 162.449 20.5179 162.449 18.8156V12.5919H162.447ZM153.248 17.4862C152.255 17.2017 151.48 16.7807 150.921 16.2231C150.362 15.6655 150.083 14.8274 150.083 13.7088C150.083 12.3624 150.566 11.3078 151.533 10.5451C152.5 9.78237 153.816 9.40101 155.482 9.40101C156.166 9.40142 156.849 9.46401 157.522 9.58801C158.216 9.7183 158.898 9.90478 159.562 10.1456C159.522 10.6321 159.433 11.1133 159.297 11.5821C159.17 12.0325 158.999 12.4692 158.787 12.886C158.328 12.697 157.857 12.5414 157.376 12.4202C156.846 12.2855 156.301 12.2187 155.754 12.2213C155.152 12.2213 154.681 12.3131 154.345 12.5001C154.183 12.5835 154.048 12.712 153.958 12.8701C153.867 13.0282 153.825 13.209 153.835 13.3909C153.835 13.7808 153.954 14.0556 154.193 14.2154C154.512 14.411 154.855 14.5631 155.213 14.6676L156.73 15.1198C157.203 15.2474 157.662 15.4216 158.1 15.64C158.482 15.8312 158.827 16.0878 159.12 16.3982C159.417 16.7201 159.643 17.1005 159.785 17.5151C159.957 18.038 160.038 18.5866 160.024 19.1369C160.03 19.7723 159.889 20.4005 159.613 20.9729C159.332 21.5478 158.925 22.0522 158.423 22.4485C157.854 22.889 157.209 23.2225 156.521 23.4328C155.702 23.683 154.85 23.8041 153.994 23.7915C153.568 23.7915 153.178 23.7785 152.825 23.7524C152.483 23.7268 152.142 23.682 151.805 23.6181C151.477 23.5569 151.154 23.4804 150.834 23.392C150.515 23.3036 150.169 23.188 149.797 23.052C149.835 22.5617 149.92 22.0761 150.05 21.6019C150.181 21.1143 150.352 20.6384 150.561 20.179C151.1 20.3956 151.656 20.569 152.223 20.6975C152.76 20.8136 153.309 20.8706 153.858 20.8675C154.13 20.8656 154.401 20.8435 154.669 20.8012C154.95 20.7606 155.223 20.6798 155.48 20.5615C155.717 20.4548 155.93 20.3009 156.106 20.1093C156.28 19.9066 156.37 19.6451 156.357 19.3783C156.357 18.9533 156.23 18.6473 155.972 18.4603C155.641 18.2401 155.278 18.0743 154.896 17.969L153.246 17.4896L153.248 17.4862ZM141.78 23.7898C140.782 23.8127 139.79 23.6268 138.868 23.2441C138.076 22.9048 137.375 22.3855 136.819 21.7277C136.266 21.0582 135.851 20.2857 135.597 19.4548C135.315 18.5421 135.176 17.5914 135.184 16.6362C135.177 15.6722 135.316 14.7127 135.597 13.7904C135.847 12.9492 136.262 12.1665 136.819 11.4886C137.377 10.8291 138.077 10.3057 138.868 9.95861C139.788 9.56766 140.781 9.37756 141.78 9.40101C142.784 9.37901 143.781 9.56962 144.706 9.96031C145.504 10.3066 146.213 10.8298 146.78 11.4903C147.344 12.1634 147.761 12.9476 148.004 13.7921C148.276 14.716 148.41 15.6748 148.403 16.6379C148.412 17.5921 148.277 18.5422 148.004 19.4565C147.757 20.2906 147.34 21.0645 146.78 21.7294C146.215 22.3883 145.505 22.9073 144.706 23.2458C143.778 23.6271 142.782 23.8123 141.78 23.7898ZM141.78 20.9168C142.773 20.9168 143.487 20.549 143.922 19.8135C144.357 19.078 144.574 18.0189 144.573 16.6362C144.573 15.2524 144.356 14.1927 143.922 13.4572C143.488 12.7217 142.774 12.3539 141.78 12.3539C140.805 12.3539 140.101 12.7217 139.667 13.4572C139.233 14.1927 139.015 15.2524 139.014 16.6362C139.014 18.0177 139.232 19.0768 139.667 19.8135C140.102 20.5502 140.806 20.9157 141.78 20.91V20.9168ZM114.138 9.72061C114.384 9.66771 114.632 9.62799 114.883 9.60161C115.156 9.57312 115.432 9.5595 115.707 9.56081C115.973 9.55894 116.24 9.57257 116.504 9.60161C116.736 9.62711 116.975 9.66791 117.223 9.72061C117.289 9.84213 117.338 9.97192 117.37 10.1065C117.414 10.2765 117.455 10.4465 117.489 10.6386C117.523 10.8307 117.555 11.0058 117.582 11.1826C117.609 11.3594 117.631 11.5107 117.648 11.6348C117.805 11.3491 117.992 11.0816 118.208 10.8375C118.449 10.5622 118.726 10.3208 119.032 10.1201C119.366 9.90234 119.728 9.73079 120.108 9.61011C120.542 9.47079 120.996 9.40304 121.451 9.40951C123.597 9.40951 124.971 10.2255 125.574 11.8575C125.945 11.1833 126.458 10.5975 127.077 10.1405C127.725 9.65317 128.545 9.40951 129.538 9.40951C131.097 9.40951 132.244 9.83961 132.981 10.6998C133.717 11.56 134.086 12.903 134.086 14.7288V23.4787C132.836 23.6918 131.559 23.6918 130.308 23.4787V15.7046C130.308 14.7481 130.189 14.0114 129.95 13.4946C129.711 12.9778 129.227 12.7205 128.5 12.7228C128.198 12.7228 127.898 12.7675 127.609 12.8554C127.306 12.95 127.032 13.1189 126.812 13.3467C126.542 13.6352 126.343 13.9811 126.227 14.3582C126.06 14.9048 125.983 15.475 126.001 16.0463V23.4668C124.75 23.6799 123.473 23.6799 122.223 23.4668V15.7046C122.223 14.7481 122.104 14.0114 121.864 13.4946C121.625 12.9778 121.142 12.7205 120.414 12.7228C120.108 12.7236 119.804 12.7683 119.51 12.8554C119.199 12.949 118.918 13.1252 118.699 13.3654C118.43 13.6768 118.234 14.0453 118.128 14.4432C117.969 15.032 117.898 15.6408 117.915 16.2503V23.4583C116.665 23.6714 115.388 23.6714 114.138 23.4583V9.72061ZM104.071 9.72061C104.336 9.66791 104.589 9.62711 104.827 9.60161C105.088 9.57329 105.35 9.55967 105.612 9.56081C105.875 9.56115 106.136 9.57875 106.396 9.61351C106.655 9.64921 106.906 9.69341 107.154 9.74781C107.221 9.86838 107.27 9.99771 107.301 10.132C107.345 10.302 107.386 10.472 107.421 10.6641C107.457 10.8562 107.488 11.0364 107.515 11.2234C107.542 11.4104 107.562 11.5634 107.581 11.6892C107.982 11.1273 108.466 10.6293 109.016 10.2119C109.632 9.76222 110.382 9.5329 111.144 9.56081C111.314 9.56081 111.525 9.56931 111.756 9.58801C111.929 9.59502 112.1 9.62183 112.266 9.66791C112.306 9.86949 112.332 10.0733 112.346 10.2782C112.365 10.5094 112.373 10.7491 112.373 10.9973C112.373 11.2988 112.36 11.6269 112.333 11.9816C112.309 12.3214 112.26 12.6589 112.186 12.9914C111.971 12.9543 111.753 12.9367 111.535 12.9387H111.097C110.755 12.9413 110.413 12.9725 110.077 13.0322C109.686 13.1026 109.32 13.2718 109.012 13.5235C108.637 13.843 108.35 14.2524 108.176 14.7135C107.949 15.245 107.836 15.9896 107.836 16.9473V23.4906C107.519 23.5433 107.2 23.5785 106.879 23.596C106.559 23.6147 106.25 23.6232 105.947 23.6232C105.645 23.6232 105.34 23.6147 105.031 23.596C104.706 23.5772 104.382 23.542 104.06 23.4906V9.72061H104.071ZM93.67 17.7531C93.7414 18.8162 94.1137 19.5874 94.7869 20.0668C95.4601 20.5462 96.3469 20.7853 97.4474 20.7842C98.0672 20.7836 98.6858 20.7267 99.2953 20.6142C99.9072 20.5044 100.508 20.34 101.09 20.1229C101.307 20.5283 101.478 20.9565 101.601 21.3996C101.745 21.9199 101.826 22.456 101.84 22.9959C100.342 23.5469 98.7547 23.8172 97.1584 23.7932C95.8823 23.7932 94.7875 23.6158 93.874 23.2611C93.0209 22.9498 92.2524 22.4434 91.63 21.7821C91.0443 21.136 90.6084 20.3686 90.3533 19.5347C90.0706 18.6129 89.9319 17.653 89.9419 16.6889C89.9346 15.724 90.078 14.7638 90.3669 13.8431C90.6288 12.9951 91.0583 12.2083 91.63 11.5294C92.1995 10.8653 92.9074 10.3338 93.704 9.97221C94.6142 9.57361 95.6006 9.37866 96.594 9.40101C97.4707 9.38695 98.3402 9.56085 99.144 9.91101C99.8682 10.2329 100.516 10.7045 101.045 11.2948C101.582 11.9007 101.987 12.6116 102.235 13.3824C102.505 14.2199 102.639 15.0951 102.632 15.9749C102.632 16.3149 102.619 16.6447 102.593 16.9728C102.568 17.3009 102.535 17.5627 102.5 17.7582L93.67 17.7531ZM99.0692 15.1198C99.0329 14.2687 98.7978 13.5813 98.3637 13.0577C97.9296 12.5341 97.3222 12.2729 96.5413 12.274C95.655 12.274 94.9813 12.5222 94.52 13.0186C94.0587 13.515 93.7845 14.2154 93.6972 15.1198H99.0692ZM81.6 12.5919H79.8643L79.73 12.07L84.7025 5.71201H85.3145V9.72911H88.5326C88.5811 9.96615 88.6168 10.2056 88.6397 10.4465C88.6567 10.659 88.6652 10.8817 88.6652 11.1112C88.6652 11.3407 88.6567 11.5991 88.6397 11.8303C88.6171 12.0887 88.5814 12.3457 88.5326 12.6004H85.3162V17.9996C85.3057 18.4472 85.3508 18.8943 85.4505 19.3307C85.5166 19.6221 85.6479 19.8947 85.8347 20.128C85.9992 20.32 86.2169 20.4591 86.4603 20.5275C86.7466 20.6023 87.0417 20.6377 87.3375 20.6329C87.6007 20.6332 87.8635 20.611 88.1229 20.5666L88.8029 20.4476C88.9278 20.7876 89.0167 21.1397 89.0681 21.4982C89.1185 21.8194 89.1453 22.1438 89.148 22.4689C89.148 22.6627 89.148 22.8276 89.1344 22.9602C89.1208 23.0928 89.1123 23.222 89.0953 23.3461C88.2668 23.54 87.4183 23.6353 86.5674 23.63C84.9535 23.63 83.721 23.2532 82.8699 22.4995C82.0188 21.7458 81.5955 20.5179 81.6 18.8156V12.5919ZM71.621 12.5919H69.8853L69.7527 12.0615L74.7269 5.70351H75.3389V9.72061H78.557C78.6058 9.95753 78.641 10.1971 78.6624 10.438C78.6811 10.6505 78.6896 10.8732 78.6896 11.1027C78.6896 11.3322 78.6896 11.5906 78.6624 11.8218C78.6413 12.0802 78.6061 12.3373 78.557 12.5919H75.3389V17.9911C75.328 18.4386 75.3725 18.8857 75.4715 19.3222C75.5381 19.6138 75.67 19.8864 75.8574 20.1195C76.0209 20.3119 76.2382 20.451 76.4813 20.519C76.7681 20.5937 77.0638 20.6292 77.3602 20.6244C77.6228 20.6246 77.885 20.6025 78.1439 20.5581L78.8239 20.4391C78.9486 20.7792 79.038 21.1313 79.0908 21.4897C79.1399 21.811 79.166 22.1354 79.169 22.4604C79.169 22.6542 79.169 22.8191 79.1571 22.9517C79.1452 23.0843 79.135 23.2135 79.1163 23.3376C78.2881 23.5343 77.4396 23.6325 76.5884 23.63C74.9745 23.63 73.742 23.2532 72.8909 22.4995C72.0398 21.7458 71.6142 20.5179 71.6142 18.8156V12.5919H71.621ZM65.4262 17.17C65.2137 17.136 64.9842 17.1037 64.7343 17.0782C64.5136 17.0526 64.2917 17.039 64.0696 17.0374C63.2003 17.0374 62.5135 17.1927 62.0092 17.5032C61.5049 17.8137 61.2521 18.3147 61.251 19.006C61.2278 19.3797 61.3295 19.7504 61.54 20.06C61.7238 20.2997 61.967 20.4872 62.2455 20.604C62.5249 20.7209 62.8209 20.7932 63.1227 20.8182C63.4338 20.8437 63.7041 20.8573 63.9336 20.8573C64.2007 20.8573 64.4674 20.8351 64.7309 20.791C64.9978 20.7468 65.229 20.706 65.4228 20.6703V17.17H65.4262ZM65.4262 14.4313C65.4414 14.0735 65.3684 13.7173 65.2137 13.3943C65.0794 13.1364 64.8772 12.9201 64.6289 12.7687C64.3463 12.6066 64.0342 12.5025 63.7109 12.4627C63.3099 12.4072 62.9054 12.3805 62.5005 12.3828C61.4565 12.3983 60.4224 12.5873 59.4405 12.9421C59.212 12.5269 59.0253 12.0902 58.8829 11.6382C58.7494 11.1626 58.6864 10.6701 58.6959 10.1762C60.1526 9.67999 61.6791 9.41945 63.2179 9.40441C65.063 9.40441 66.5034 9.84754 67.5393 10.7338C68.5752 11.6201 69.0937 13.0367 69.0948 14.9838V22.9619C68.3516 23.1877 67.5968 23.3739 66.8338 23.5195C65.8437 23.7073 64.8375 23.7967 63.8299 23.7864C62.9948 23.7933 62.1612 23.7129 61.3428 23.5467C60.6492 23.4123 59.9892 23.1413 59.4014 22.7494C58.8685 22.3853 58.4377 21.8908 58.1502 21.3129C57.8389 20.6387 57.6888 19.9013 57.7116 19.159C57.6853 18.4076 57.8747 17.6643 58.2573 17.017C58.6121 16.4523 59.0964 15.9803 59.67 15.64C60.2668 15.2851 60.9191 15.0334 61.5995 14.8954C62.2985 14.7454 63.0113 14.6697 63.7262 14.6693C64.2362 14.6693 64.8074 14.6965 65.4262 14.7492V14.4313Z" fill="currentColor"/>
+						  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1691 2.66625L22.317 5.62935C24.7191 8.28475 25.6694 12.0434 24.4794 15.576C22.6944 20.846 16.8073 23.6238 11.3299 21.7691C5.85246 19.9144 2.86046 14.1361 4.64546 8.86275C5.84566 5.31655 8.89546 2.90255 12.4349 2.26335L14.3372 0.000649596C10.9983 -0.0885511 7.73802 1.02232 5.14821 3.13162C2.5584 5.24093 0.81068 8.20887 0.22227 11.4967C-0.366141 14.7846 0.24376 18.1745 1.94127 21.051C3.63878 23.9276 6.31139 26.1003 9.474 27.1746C12.6366 28.2489 16.0796 28.1538 19.178 26.9064C22.2764 25.659 24.825 23.342 26.361 20.3761C27.897 17.4101 28.3187 13.9917 27.5496 10.7414C26.7804 7.49103 24.8714 4.62418 22.1691 2.66115V2.66625Z" fill="currentColor"/>
+						  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7475 11.4104L18.6455 7.26753L18.5639 4.88753L18.5095 2.82203C18.5095 2.82203 18.5214 1.82583 18.4857 1.59293C18.4799 1.54939 18.4661 1.50732 18.4449 1.46883V1.45353L18.4364 1.44163C18.3994 1.37386 18.339 1.3219 18.2664 1.29543C18.1902 1.26972 18.1072 1.27335 18.0335 1.30563L18.008 1.31923C17.9708 1.33653 17.9369 1.3601 17.9077 1.38893C17.7377 1.55893 17.141 2.35113 17.141 2.35113L15.8422 3.95933L14.3139 5.80043L11.7163 9.03043C11.7163 9.03043 10.5263 10.5179 10.7881 12.3488C11.0499 14.1797 12.4116 15.0688 13.4673 15.4292C14.523 15.7896 16.1465 15.9052 17.4691 14.6115C18.7917 13.3178 18.7475 11.4104 18.7475 11.4104Z" fill="currentColor"/>
+						</g>
+						<defs>
+						  <clipPath id="clip0_1211_600">
+							<rect width="170" height="27.9276" fill="white"/>
+						  </clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div class="site-header__mobile-menu" id="hamburger" data-ol-has-click-handler="">
+				<svg class="hamburger-open" width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line y1="1.5" x2="25" y2="1.5" stroke="currentColor" stroke-width="3"></line>
+					<line y1="9.83325" x2="25" y2="9.83325" stroke="currentColor" stroke-width="3"></line>
+					<line y1="18.1667" x2="25" y2="18.1667" stroke="currentColor" stroke-width="3"></line>
+				</svg>
+				<svg class="hamburger-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="2.06066" y1="1.93934" x2="19.0607" y2="18.9393" stroke="currentColor" stroke-width="3"></line>
+					<line y1="-1.5" x2="24.0416" y2="-1.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 20 3)" stroke="currentColor" stroke-width="3"></line>
+				</svg>
+			</div>
+			<div class="site-header__col--menu">
+				<ul class="site-nav" id="navigation">
+					<li class="site-nav__toplink site-nav__hassubnav">
+						<a href="javascript:void(0);" data-ol-has-click-handler="">
+							<div class="toplink-wrapper">
+								Platform
+								<span>
+									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="sub-menu sub-menu__products">
+							<div class="sub-menu__products__main">
+								<div class="sub-menu__products-link-col">
+									<p class="sub-menu__link-col-header">Platform</p>
+									<ul>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/platform-overview/">
+												Overview
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/channels/">
+												Channels
+											</a>
+										</li>	
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/playbooks/">
+												Playbooks
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/integrations-overview/">
+												Integrations
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/mobile/">
+												Mobile
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/security/">
+												Security
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://trust.mattermost.com/">
+												Trust Center
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="sub-menu__products-link-col">
+									<p class="sub-menu__link-col-header sub-menu__link-col-header-space">Interoperability</p>
+									<ul>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/mattermost-for-microsoft-teams/">
+												MS Teams
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/atlassian/">
+												Atlassian
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/mattermost-gitlab/">
+												GitLab
+											</a>
+										</li>
+									</ul>
+									<p class="sub-menu__link-col-header sub-menu__header-flex-deploy sub-menu__link-col-header-space">Flexible Deployment</p>
+									<ul>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/enterprise/on-prem/">
+												On-Premise
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/enterprise/cloud/">
+											Cloud
+											</a>
+										</li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav__toplink site-nav__hassubnav">
+						<a href="javascript:void(0);" data-ol-has-click-handler="">
+							<div class="toplink-wrapper">
+								Solutions
+								<span>
+									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="sub-menu sub-menu__solutions">
+							<div class="sub-menu__solutions__main-wrapper">
+								<div class="sub-menu__solutions-link-col">
+									<p class="sub-menu__link-col-header sub-menu__link-col-header-first">Use Cases</p>
+									<ul>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/use-cases/purpose-built-collaboration/">
+											Purpose-Built Collaboration Hub
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/use-cases/self-sovereign-collaboration/">
+											Self-Sovereign Collaboration
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/use-cases/mission-critical-chatops/">
+											Mission-Critical ChatOps
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/use-cases/devsecops-collaboration/">
+											Real-Time DevSecOps Collaboration
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/use-cases/integrated-security-operations/">
+											Integrated Security Operations
+											</a>
+										</li>	
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/use-cases/out-of-band-incident-response/">
+											Out-of-Band Incident Response
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="sub-menu__solutions-link-col">
+									<p class="sub-menu__link-col-header sub-menu__link-col-header-space">Industries</p>
+									<ul>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/critical-infrastructure/">
+											Critical Infrastructure
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/defense/">
+											Defense
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/technology/">
+											Technology
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/government/">
+											Global Public Sector
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/financial-services/">
+											Financial Services
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/energy-and-utilities/">
+											Energy and Utilities
+											</a>
+										</li>
+										<li class="sub-menu__links--single">
+											<a href="https://mattermost.com/solutions/industries/manufacturing/">
+											Manufacturing
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav__toplink site-nav__hassubnav">
+						<a href="javascript:void(0);">
+							<div class="toplink-wrapper">
+								Customers
+								<span>
+									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round" />
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="sub-menu sub-menu__customers">
+							<div class="sub-menu__links-wrapper">
+								<p class="sub-menu__link-col-header">Customers</p>
+								<div class="sub-menu__customers-grid-wrapper">
+									<div class="sub-menu__customers-link-col">
+										<ul>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/us-department-of-defense/">
+													<img src="../_static/images/nav/logos/nav-logo-icon-usaf.png" alt="">
+													<span>USAF</span>
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/fujitsu/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-fujitsu.png" alt="">
+													<span>Fujitsu</span>
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/rte/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-rte.png" alt="">
+													<span>RTE</span>
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/cern/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-cern.png" alt="">
+													<span>CERN</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-menu__customers-link-col">
+										<ul>
+										<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/nri/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-nri.png" alt="">
+													<span>NRI</span>
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/pramacom/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-pramacom.png" alt="">
+													<span>Pramacom</span>
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/crossover-health/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-crossover.png" alt="">
+													<span>Crossover Health</span>
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/customers/netfoundry/">
+												<img src="../_static/images/nav/logos/nav-logo-icon-netfoundry.png" alt="">
+													<span>Netfoundry</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sub-menu__bottom-link">
+									<a href="https://mattermost.com/customers/">See more customer stories &raquo;</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav__toplink">
+						<a href="https://mattermost.com/pricing/" data-ol-has-click-handler="">
+							<div class="toplink-wrapper">Pricing</div>
+						</a>
+					</li>
+					<li class="site-nav__toplink site-nav__hassubnav">
+						<a href="javascript:void(0);">
+							<div class="toplink-wrapper">
+								Partners
+								<span>
+									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round" />
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="sub-menu sub-menu__partners">
+							<div class="sub-menu__links-wrapper">
+								<p class="sub-menu__link-col-header">Partners</p>
+								<ul>
+									<li class="sub-menu__links--single">
+										<a href="https://support.mattermost.com/hc/en-us/requests/new?ticket_form_id=24278352368532">
+										Become a Partner
+										</a>
+									</li>
+									<li class="sub-menu__links--single">
+										<a href="https://mattermost.com/partners/">
+										Partner Program
+										</a>
+									</li>
+									<li class="sub-menu__links--single">
+										<a href="https://mattermost.com/reseller-deal-registration/">
+										Deal Registration
+										</a>
+									</li>
 
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">About Mattermost</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../about/product.html">Mattermost overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/use-cases.html">Use cases</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/secure-command-and-control.html">Secure command and control</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/unified-collaboration.html">Unified communication</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../about/mattermost-for-microsoft-teams.html">Mattermost for Microsoft Teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../about/mattermost-google-calendar-integration.html">Mattermost Google Calendar integration</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav__toplink site-nav__hassubnav">
+						<a href="javascript:void(0);" data-ol-has-click-handler="">
+							<div class="toplink-wrapper">
+								Resources
+								<span>
+									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="sub-menu sub-menu__developers">
+							<div class="sub-menu__developers__main">
+								<div class="sub-menu__developers-grid-wrapper">
+									<div class="sub-menu__dev-link-col">
+										<p class="sub-menu__link-col-header sub-menu__link-col-header-first">Resources</p>
+										<ul>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/resources/">
+													Resource Library
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/blog/">
+													Blog
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/resources/?filter=demos">
+												Demos
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/events/">
+												Events
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-menu__dev-link-col">
+										<p class="sub-menu__link-col-header sub-menu__link-col-header-space">Documentation</p>
+										<ul>
+											
+											<li class="sub-menu__links--single">
+												<a href="https://academy.mattermost.com/">
+												Academy
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://docs.mattermost.com/guides/channels.html">
+												Channels Guide
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://docs.mattermost.com/guides/repeatable-processes.html">
+												Playbooks Guide
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://docs.mattermost.com/guides/administration.html">
+												Admin
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://docs.mattermost.com/">
+												Docs
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://api.mattermost.com/">
+													API Reference
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://docs.mattermost.com/administration/changelog.html">
+													Release Notes
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-menu__dev-link-col">
+										<p class="sub-menu__link-col-header sub-menu__link-col-header-space">Community</p>
+										<ul>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/community/">
+													Join Community
+												</a>
+											</li>	
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/contribute/">
+													Contribute
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/download/">
+													Deploy
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://developers.mattermost.com/integrate/getting-started/">
+													Integrate
+												</a>
+											</li>
+											<li class="sub-menu__links--single">
+												<a href="https://mattermost.com/download/">
+													Download
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav__toplink site-nav__hassubnav site-nav-login">
+						<a href="javascript:void(0);" data-ol-has-click-handler="">
+							<div class="toplink-wrapper">
+								Login
+								<span>
+									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="sub-menu sub-menu__login">
+							<div class="sub-menu__links-wrapper">
+								<p class="sub-menu__link-col-header">Login</p>
+								<ul>
+									<li class="sub-menu__links--single">
+										<a href="https://customers.mattermost.com/cloud/connect-workspace" data-ol-has-click-handler="">
+										My Workspace
+										</a>
+									</li>
+									<li class="sub-menu__links--single">
+										<a href="https://customers.mattermost.com/login/" data-ol-has-click-handler="">
+											Admin Portal
+										</a>
+									</li>
+									<li class="sub-menu__links--single">
+										<a href="https://mattermost.com/download/" data-ol-has-click-handler="">
+											Apps
+										</a>
+									</li>
+									<li class="sub-menu__links--single">
+										<a href="https://support.mattermost.com/hc/en-us/" data-ol-has-click-handler="">
+											Support
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav__toplink site-nav__button">
+						<a class="mm-button mm-button-solid mm-button-blue" href="https://mattermost.com/contact-sales/" data-ol-has-click-handler="">Contact Sales</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Mattermost documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  <span class="sidebar-brand-text">Mattermost documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../overview/index.html">About Mattermost</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of About Mattermost</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="product.html">Mattermost overview</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="use-cases.html">Use cases</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Use cases</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="mattermost-for-microsoft-teams.html">Mattermost for Microsoft Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="secure-command-and-control.html">Secure command and control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="devops-collaboration.html">DevOps collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="incident-response-collaboration.html">Incident response collaboration</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../about/devops-collaboration.html">DevOps collaboration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/incident-response-collaboration.html">Incident response collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Security overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrations.html">Integrations overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subscription.html">Subscription overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="self-hosted-subscriptions.html">Self-hosted subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud-subscriptions.html">Cloud subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editions-and-offerings.html">Editions and offerings</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="releases-lifecycle.html">Releases and life cycle</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Releases and life cycle</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="release-policy.html">Release policy</a></li>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="server.html">Server</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Server</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="mattermost-server-releases.html">Server releases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mattermost-v10-changelog.html">v10 changelog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mattermost-v9-changelog.html">v9 changelog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unsupported-legacy-releases.html">Unsupported legacy releases</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Version archive</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../about/security.html">Security overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/integrations.html">Integrations overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/subscription.html">Subscription overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/self-hosted-subscriptions.html">Self-hosted subscriptions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/cloud-subscriptions.html">Cloud subscriptions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/editions-and-offerings.html">Mattermost editions and plans</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/corporate-directory-integration.html">Corporate directory integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/certifications-and-compliance.html">Certifications and compliance overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about/frequently-asked-questions.html">Frequently asked questions (FAQ)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-general.html">General Mattermost questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-community.html">Community questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-notifications.html">Notifications</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-video-audio-screensharing.html">Video, audio, and screen sharing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-enterprise.html">Enterprise questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-license.html">License questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-integrations.html">Integrations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-use-cases.html">Use cases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-product.html">Product questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-high-trust.html">High trust questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-design-decisions.html">Design decisions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-business.html">Business questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../about/faq-illicit-use.html">Illicit use</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="desktop.html">Desktop</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Desktop</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="mattermost-desktop-releases.html">Desktop releases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="desktop-app-changelog.html">Desktop app changelog</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="mobile.html">Mobile</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Mobile</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="mattermost-mobile-releases.html">Mobile releases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mobile-app-changelog.html">Mobile apps changelog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deprecated-features.html">Removed and deprecated features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="corporate-directory-integration.html">Corporate directory integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="certifications-and-compliance.html">Certifications and compliance overview</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="frequently-asked-questions.html">Frequently asked questions (FAQ)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Frequently asked questions (FAQ)</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="faq-general.html">General Mattermost questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-community.html">Community questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-notifications.html">Notifications questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-video-audio-screensharing.html">Video, audio, and screen sharing questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-enterprise.html">Enterprise questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-license.html">License questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-integrations.html">Integration questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-use-cases.html">Use cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-product.html">Product questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-high-trust.html">High trust questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-design-decisions.html">Design decision questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-business.html">Business questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq-illicit-use.html">Illicit use questions</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../guides/deployment.html">Deploy Mattermost</a><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/deployment.html">Deploy Mattermost</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Deploy Mattermost</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../deploy/postgres-migration.html">  Migrate from MySQL to PostgreSQL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/prepare-mattermost-database.html">  Prepare your Mattermost database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/install-ubuntu.html">  Deploy on Ubuntu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/install-docker.html">  Deploy using Docker</a></li>
@@ -149,12 +753,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../install/install-rhel-8.html">  Deploy on Red Hat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/setup-nginx-proxy.html">  Set up an NGINX proxy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../install/setup-tls.html">  Set up TLS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/prepare-for-your-mattermost-deployment.html">  Prepare for your Mattermost deployment</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/prepare-for-your-mattermost-deployment.html">  Prepare for your Mattermost deployment</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of   Prepare for your Mattermost deployment</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../install/software-hardware-requirements.html">  Software and hardware requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../install/mattermost-kubernetes-operator.html">  About the Mattermost Kubernetes Operator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../install/manage_kubernetes.html">  Manage the Mattermost Kubernetes Operator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../getting-started/admin-onboarding-tasks.html">  Administrator tasks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/architecture-overview.html">  Architecture overview</a><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../getting-started/architecture-overview.html">  Architecture overview</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of   Architecture overview</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../getting-started/implementation-plan.html">  Plan your Mattermost implementation</a></li>
@@ -162,20 +765,26 @@
 <li class="toctree-l3"><a class="reference internal" href="../getting-started/welcome-email-to-end-users.html">  Welcome email template</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment-guides.html">  Deployment guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../guides/server-deployment.html">Server deployment</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/deployment-guides.html">  Deployment guides</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of   Deployment guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../guides/server-deployment.html">Server deployment</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of Server deployment</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../deploy/deployment-overview.html"> Deployment overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../install/setting-up-socket-based-mattermost-database.html"> Set up a socket-based Mattermost database</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../deploy/image-proxy.html"> Image proxy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../deploy/backup-disaster-recovery.html"> Backup and disaster recovery</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../deploy/encryption-options.html"> Encryption options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../install/transport-encryption.html"> Configure transport encryption</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../deploy/bleve-search.html"> Bleve search</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../install/transport-encryption.html"> Configure transport encryption</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of  Configure transport encryption</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../install/proxy-to-mattermost-transport-encryption.html">Configuring proxy to Mattermost transport encryption</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../install/database-transport-encryption.html">Configuring database transport encryption</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../install/cluster-transport-encryption.html">Configuring cluster transport encryption</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../guides/desktop-mobile-app-deployment.html">Desktop and mobile app deployment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../deploy/bleve-search.html"> Bleve search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/trial-mattermost-using-docker.html"> Trial Mattermost using Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../guides/desktop-mobile-app-deployment.html">Desktop and mobile app deployment</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of Desktop and mobile app deployment</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../deploy/desktop-app.html">Desktop app deployment guide</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../install/desktop-msi-installer-and-group-policy-install.html">Desktop MSI installer and group policy installation guides (beta)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../install/desktop-msi-installer-and-group-policy-install.html">Desktop MSI installer and group policy installation guides (Beta)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../install/desktop-custom-dictionaries.html">Desktop App custom dictionaries</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../install/desktop-app-managed-resources.html">Desktop managed resources</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../deploy/use-prebuilt-mobile-apps.html">Using Mattermost’s pre-built mobile apps</a></li>
@@ -192,7 +801,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../deploy/deploy-mattermost-apps.html">  Deploy Mattermost Apps</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../deploy/deploy-mattermost-apps.html">  Deploy Mattermost Apps</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of   Deploy Mattermost Apps</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../deploy/configure-app-framework.html"> Settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../deploy/deploy-http.html"> HTTP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../deploy/deploy-aws.html"> AWS</a></li>
@@ -200,28 +809,34 @@
 <li class="toctree-l3"><a class="reference internal" href="../deploy/deploy-openfaas.html"> OpenFaaS</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="../guides/upgrade-mattermost.html">  Upgrade Mattermost</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="prepare-to-upgrade-mattermost.html"> Prepare to upgrade Mattermost</a></li>
-<li class="toctree-l3"><a class="reference internal" href="upgrading-mattermost-server.html"> Upgrade Mattermost Server</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/upgrade-mattermost.html">  Upgrade Mattermost</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of   Upgrade Mattermost</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/important-upgrade-notes.html"> Important upgrade notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/prepare-to-upgrade-mattermost.html"> Prepare to upgrade Mattermost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/upgrading-mattermost-server.html"> Upgrade Mattermost Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../install/enterprise-install-upgrade.html"> Enterprise install and upgrade</a></li>
-<li class="toctree-l3"><a class="reference internal" href="installing-license-key.html"> Install a license key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="release-definitions.html"> Release definitions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="important-upgrade-notes.html"> Important upgrade notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="release-lifecycle.html"> Release lifecycle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="extended-support-release.html"> Extended Support Release</a></li>
-<li class="toctree-l3"><a class="reference internal" href="downgrading-mattermost-server.html"> Downgrade Mattermost Server</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"> Version archive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/installing-license-key.html"> Install a license key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/downgrading-mattermost-server.html"> Downgrade Mattermost Server</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/scale-mattermost.html">  Scale Mattermost</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/scale-mattermost.html">  Scale Mattermost</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of   Scale Mattermost</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../scale/scaling-for-enterprise.html"> Scale for Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-100-users.html"> Scale up to 100 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-1000-users.html"> Scale up to 1000 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-15000-users.html"> Scale up to 15000 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-25000-users.html"> Scale up to 25000 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-50000-users.html"> Scale up to 50000 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-70000-users.html"> Scale up to 70000 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-79000-users.html"> Scale up to 79000 users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/scale-to-88000-users.html"> Scale up to 88000 users</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../scale/high-availability-cluster.html"> High availability cluster</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../scale/elasticsearch.html"> Elasticsearch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../scale/performance-monitoring.html"> Performance monitoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/collect-performance-metrics.html"> Collect performance metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/deploy-prometheus-grafana-for-performance-monitoring.html"> Deploy Prometheus and Grafana for performance monitoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scale/performance-monitoring-metrics.html"> Performance monitoring metrics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../scale/performance-alerting.html"> Mattermost performance alerting guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/deployment-troubleshooting.html">  Deployment troubleshooting</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/deployment-troubleshooting.html">  Deployment troubleshooting</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of   Deployment troubleshooting</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../install/troubleshooting.html">  General troubleshooting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../deploy/high-scale-troubleshoot.html">  Troubleshooting your high scale deployment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../deploy/mobile-troubleshoot.html">  Troubleshooting mobile applications</a></li>
@@ -229,26 +844,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../install/trouble_mysql.html">  MySQL installation troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/changelogs.html">  Changelogs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/mattermost-changelog.html">  Mattermost changelog</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/legacy-self-hosted-changelog.html">  Mattermost legacy self-hosted</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/legacy-cloud-changelog.html">  Mattermost legacy Cloud</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/mobile-app-changelog.html">  Mobile apps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/desktop-app-changelog.html">  Desktop app</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/deprecated-features.html">  Deprecated features</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/additional-server-installation-guides.html">  Additional server installation guides</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/additional-server-installation-guides.html">  Additional server installation guides</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of   Additional server installation guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../install/deploying-team-edition-on-bitnami.html">  Deploy Mattermost on Bitnami</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../install/setting-up-aws-elastic-beanstalk-docker.html">  AWS Elastic Beanstalk Docker setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../install/installing-team-edition-helm-chart.html">  Install Mattermost Team Edition in GitLab Helm Chart</a></li>
-<li class="toctree-l3"><a class="reference internal" href="open-source-components.html">  Open source components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/open-source-components.html">  Open source components</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/administration.html">Manage Mattermost</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/get-started-with-administration.html">Get started</a><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/administration.html">Manage Mattermost</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of Manage Mattermost</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/get-started-with-administration.html">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/feature-labels.html">Mattermost feature labels</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/optimize-your-workspace.html">Optimize your workspace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/configuration-settings.html">Mattermost configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/self-hosted-account-settings.html">Self-hosted edition and license</a></li>
@@ -259,6 +866,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../configure/site-configuration-settings.html">Site configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/authentication-configuration-settings.html">Authentication configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/plugins-configuration-settings.html">Plugins configuration settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configure/enable-copilot.html">Enable Copilot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configure/manage-user-surveys.html">Manage user surveys</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/integrations-configuration-settings.html">Integrations configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/compliance-configuration-settings.html">Compliance configuration settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/experimental-configuration-settings.html">Experimental configuration settings</a></li>
@@ -275,18 +884,20 @@
 <li class="toctree-l3"><a class="reference internal" href="../onboard/system-admin-roles.html">System admin roles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/team-channel-members.html">Manage team and channel members</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/custom-branding-tools.html">Custom branding tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../comply/export-mattermost-channel-data.html">Export channel data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/electronic-discovery.html">eDiscovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/compliance-monitoring.html">Compliance monitoring</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/compliance-export.html">Compliance export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/legal-hold.html">Legal hold</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/data-retention-policy.html">Data retention tools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../comply/custom-terms-of-service.html">Custom terms of service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notify-admin.html">Notify Admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../upgrade/notify-admin.html">Notify Admin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/ad-ldap-groups-synchronization.html">AD/LDAP groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/managing-team-channel-membership-using-ad-ldap-sync-groups.html">Use AD/LDAP synchronized groups to manage team or private channel membership</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/guest-accounts.html">Guest accounts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../onboard/sso-saml.html">SAML Single Sign-On</a><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../onboard/sso-saml.html">SAML Single Sign-On</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of SAML Single Sign-On</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-okta.html">Okta SAML Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../scripts/generate-certificates/gencert.html">Generate self-signed certificates</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-onelogin.html">OneLogin SAML Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-adfs.html">Microsoft ADFS SAML Configuration for Windows Server 2012</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../onboard/sso-saml-adfs-msws2016.html">Microsoft ADFS SAML Configuration for Windows Server 2016</a></li>
@@ -303,8 +914,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../manage/bulk-export-tool.html">Bulk export tool</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/cloud-workspace-management.html">Cloud workspace management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../manage/cloud-billing.html">Mattermost Cloud billing</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/cloud-workspace-management.html">Cloud workspace management</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of Cloud workspace management</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../manage/workspace-usage.html">Workspace usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/cloud-data-export.html">Workspace migration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/cloud-data-residency.html">Cloud data residency</a></li>
@@ -312,10 +922,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../manage/cloud-byok.html">Cloud Bring Your Own Key (BYOK)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/self-hosted-administration.html">Self-hosted administration</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/self-hosted-administration.html">Self-hosted administration</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of Self-hosted administration</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../manage/self-hosted-billing.html">Mattermost self-hosted billing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/error-codes.html">Mattermost error codes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../configure/configuation-in-a-database.html">Store configuration in the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configure/configuration-in-your-database.html">Store configuration in your database</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/bulk-loading-data.html">Bulk loading data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/smtp-email.html">SMTP email setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/email-templates.html">Email templates</a></li>
@@ -324,7 +934,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../configure/using-outbound-proxy.html">Use an outbound proxy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/migrating-to-mattermost.html">Migration guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/migrate-from-slack.html">Migrate from Slack</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../deploy/postgres-migration.html">Migration from MySQL to PostgreSQL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/enabling-chinese-japanese-korean-search.html">Chinese, Japanese, and Korean search</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configure/customizing-mattermost.html">Customize Mattermost</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/logging.html">Mattermost logging</a></li>
@@ -334,7 +943,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../manage/telemetry.html">Manage telemetry</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/other-administration-resources.html">Other resources</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/other-administration-resources.html">Other resources</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of Other resources</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../onboard/convert-oauth20-service-providers-to-openidconnect.html">Convert OAuth 2.0 providers to OpenID Connect</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/generating-support-packet.html">Generate a support packet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../manage/mmctl-command-line-tool.html">mmctl command line tool</a></li>
@@ -345,16 +954,16 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/use-mattermost.html">Use Mattermost</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/collaborate.html">Connect and collaborate</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../collaborate/access-your-workspace.html">Access your Mattermost workspace</a><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/use-mattermost.html">Use Mattermost</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of Use Mattermost</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/collaborate.html">Connect and collaborate</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of Connect and collaborate</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../collaborate/access-your-workspace.html">Access your Mattermost workspace</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of Access your Mattermost workspace</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/install-desktop-app.html">Install the desktop app</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/install-ios-app.html">Install the iOS mobile app</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/install-android-app.html">Install the Android mobile app</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/log-out.html">Log out of Mattermost</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../collaborate/organize-using-teams.html">Organize using teams</a><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../collaborate/organize-using-teams.html">Organize using teams</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of Organize using teams</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/team-settings.html">Team settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/team-keyboard-shortcuts.html">Team keyboard shortcuts</a></li>
 </ul>
@@ -362,7 +971,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../collaborate/organize-using-custom-user-groups.html">Organize using custom user groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../collaborate/invite-people.html">Invite people</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../collaborate/learn-about-roles.html">Learn about Mattermost roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../collaborate/collaborate-within-channels.html">Collaborate within channels</a><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../collaborate/collaborate-within-channels.html">Collaborate within channels</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of Collaborate within channels</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/channel-types.html">Channel types</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/channel-naming-conventions.html">Channel naming conventions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/channel-header-purpose.html">Communicate a channel's focus and scope</a></li>
@@ -380,7 +989,9 @@
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/archive-unarchive-channels.html">Archive and unarchive channels</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../collaborate/communicate-with-messages.html">Communicate with messages and threads</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/collaborate-within-connected-microsoft-teams.html">Collaborate within Microsoft Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/chat-with-copilot.html">Chat with Copilot</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../collaborate/communicate-with-messages.html">Communicate with messages and threads</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle navigation of Communicate with messages and threads</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/send-messages.html">Send messages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/reply-to-messages.html">Reply to messages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/react-with-emojis-gifs.html">React with emojis and GIFs</a></li>
@@ -397,21 +1008,16 @@
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/share-files-in-messages.html">Share files in messages</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../collaborate/keyboard-shortcuts.html">Keyboard shortcuts</a><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../collaborate/keyboard-shortcuts.html">Keyboard shortcuts</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle navigation of Keyboard shortcuts</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/keyboard-accessibility.html">Keyboard accessibility</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/run-slash-commands.html">Run slash commands</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaborate/built-in-slash-commands.html">Built-in-slash-commands</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../collaborate/extend-mattermost-with-integrations.html">Extend Mattermost with integrations</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../collaborate/collaborate-within-connected-microsoft-teams.html">Collaborate within connected MS Teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../collaborate/collaborate-within-embedded-microsoft-teams.html">Collaborate within embedded MS Teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../collaborate/use-mattermost-google-calendar-plugin.html">Use the Mattermost Google Calendar plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/extend-mattermost-with-integrations.html">Extend Mattermost with integrations</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/repeatable-processes.html">Build repeatable processes</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/repeatable-processes.html">Build repeatable processes</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle navigation of Build repeatable processes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/learn-about-playbooks.html">Learn about playbooks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/work-with-playbooks.html">Work with playbooks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/work-with-runs.html">Work with runs</a></li>
@@ -422,7 +1028,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../repeatable-processes/interact-with-playbooks.html">Interact with playbooks</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Customize your preferences</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../guides/preferences.html">Customize your preferences</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" role="switch" type="checkbox"/><label for="toctree-checkbox-34"><div class="visually-hidden">Toggle navigation of Customize your preferences</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../preferences/manage-your-notifications.html">Manage your notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../preferences/customize-your-theme.html">Customize your Mattermost theme</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../preferences/customize-your-channel-sidebar.html">Customize your channel sidebar</a></li>
@@ -438,6 +1044,15 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/integrate-and-extend.html">Integrate and extend</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" role="switch" type="checkbox"/><label for="toctree-checkbox-35"><div class="visually-hidden">Toggle navigation of Integrate and extend</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrate/github-interoperability.html">  GitHub interoperability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrate/gitlab-interoperability.html">  GitLab interoperability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrate/jira-interoperability.html">  Jira interoperability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrate/microsoft-teams-interoperability.html">  Microsoft Teams interoperability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrate/servicenow-interoperability.html">  ServiceNow interoperability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrate/zoom-interoperability.html">  Zoom interoperability</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference external" href="https://developers.mattermost.com/">Develop with Mattermost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/get-help.html">Get help with Mattermost</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/community-chat.html">Join our community</a></li>
@@ -445,98 +1060,101 @@
 <li class="toctree-l1"><a class="reference internal" href="../guides/contribute-to-documentation.html">Contribute to this documentation</a></li>
 </ul>
 
-            
-          
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/mattermost/docs/edit/master/source/about/version-archive.rst" title="Edit this page">
+    <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+      <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+    </svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
         </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Mattermost</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-  
-
-
-<div data-swiftype-index=false role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-    
-      <li><a href="../guides/deployment.html">Deploy Mattermost</a> &raquo;</li>
-    
-      <li><a href="../guides/upgrade-mattermost.html">Upgrade Mattermost</a> &raquo;</li>
-    
-    <li>Version Archive</li>
-    <li class="wy-breadcrumbs-aside">
-      <div class="search__icon">
-        <i class="fa fa-search"></i> <span>Search</span>
-      </div>
-      
-        
-          <a href="https://github.com/mattermost/docs/blob/master/source/upgrade/version-archive.rst" class="fa fa-github"> Edit</a>
-        
-      
-    </li> 
-  </ul>
-  <hr/>
-</div>
-          <article data-swiftype-index=false class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
-           <div data-swiftype-index=true itemprop="articleBody" role="main">
-            
-  <section id="version-archive">
-<h1><a class="toc-backref" href="#on-this-page">Version Archive</a><a class="headerlink" href="#version-archive" title="Permalink to this headline"></a></h1>
-<div class="mm-badge"><p><img alt="plans-img" src="../_images/flag_icon.svg" /> Available on <a class="reference external" href="https://mattermost.com/pricing/">all plans</a></p>
-<p><img alt="deployment-img" src="../_images/deployment_icon.svg" /> <a class="reference external" href="https://mattermost.com/deploy/">self-hosted</a> deployments</p>
-</div><p>If you want to check that the version of Mattermost you are installing is the official, unmodified version, compare the SHA-265 checksum or the file’s GPG signature with the one published in this version archive. To verify the GPG signature of a Mattermost release, use the public key stored in Keybase: <a class="reference external" href="https://keybase.io/mattermost">https://keybase.io/mattermost</a>.</p>
-<div class="admonition important">
+        <article role="main">
+          <section id="version-archive">
+<h1>Version archive<a class="headerlink" href="#version-archive" title="Link to this heading">#</a></h1>
+<div class="mm-plans-badge"><p><img alt="plans-img" class="mm-badge-flag" src="../_images/flag_icon.svg" /> Available on <a class="reference external" href="https://mattermost.com/pricing/">all plans</a></p>
+<p><img alt="deployment-img" class="mm-badge-flag" src="../_images/deployment_icon.svg" /> <a class="reference external" href="https://mattermost.com/deploy/">self-hosted</a> deployments</p>
+</div><div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Support for Mattermost Server v8.1 <a class="reference internal" href="extended-support-release.html"><span class="doc">Extended Support Release</span></a> is coming to the end of its life cycle on May 15, 2024. Upgrading to Mattermost Server v8.1 <a class="reference internal" href="extended-support-release.html"><span class="doc">Extended Support Release</span></a> or later is recommended.</p>
-</div>
-<div class="contents topic" id="on-this-page">
-<p class="topic-title">On this page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#version-archive" id="id1">Version Archive</a></p>
-<ul>
-<li><p><a class="reference internal" href="#mattermost-enterprise-edition" id="id2">Mattermost Enterprise Edition</a></p></li>
-<li><p><a class="reference internal" href="#mattermost-team-edition" id="id3">Mattermost Team Edition</a></p></li>
-</ul>
-</li>
+<li><p>Support for Mattermost Server v8.1 <a class="reference internal" href="release-policy.html#extended-support-releases"><span class="std std-ref">Extended Support Release</span></a> has come to the end of its life cycle in May 15, 2024. Upgrading to Mattermost Server v9.5 or later is required.</p></li>
+<li><p>Note that our package signing key has been moved away from Keybase. If you still reference Keybase in your deployment steps for retrieving the key, update them to the new key location: <a class="reference external" href="https://deb.packages.mattermost.com/pubkey.gpg">https://deb.packages.mattermost.com/pubkey.gpg</a>.</p></li>
+<li><p>If you want to check that the version of Mattermost you are installing is the official, unmodified version, compare the SHA-256 checksum or the file’s GPG signature with the one published in this version archive. To verify the GPG signature of a Mattermost release, use the public key stored at the following URL: <a class="reference external" href="https://deb.packages.mattermost.com/pubkey.gpg">https://deb.packages.mattermost.com/pubkey.gpg</a>.</p></li>
 </ul>
 </div>
-<section id="mattermost-enterprise-edition">
-<h2><a class="toc-backref" href="#on-this-page">Mattermost Enterprise Edition</a><a class="headerlink" href="#mattermost-enterprise-edition" title="Permalink to this headline"></a></h2>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Mattermost Enterprise</label><div class="tab-content docutils">
 <dl class="simple">
-<dt>Mattermost Enterprise Edition v9.5.1 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-5-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">177d8d5ae94a521a321cf0a60828a1e876fdf96da2b85fccc72f544ab829d693</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.5.1/mattermost-9.5.1-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v9.9.1 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-9-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.9.1/mattermost-9.9.1-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.9.1/mattermost-9.9.1-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">d2303a5e54eb7308081022f72c9c15c2e8206966c7c9048d2911dc71a3972493</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.9.1/mattermost-9.9.1-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.9.1/mattermost-9.9.1-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Enterprise Edition v9.4.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-4-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">e6a5c9cc9ce6432e1fcf50f20e42eed9da8161831afe699b4b803577fdb486b5</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.4.3/mattermost-9.4.3-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v9.8.2 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-8-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.8.2/mattermost-9.8.2-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.8.2/mattermost-9.8.2-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">55fa6e7d2032cbdad186196ed5e5fb33c296e03b5684ce3a63e06c634608f59a</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.8.2/mattermost-9.8.2-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.8.2/mattermost-9.8.2-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Enterprise Edition v9.3.2 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-3-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">b5686e51421a07698edfe024d3f03b0e9b405f882ba7d622232ba6a6db22da34</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.3.2/mattermost-9.3.2-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v9.7.6 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-7-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.7.6/mattermost-9.7.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.7.6/mattermost-9.7.6-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">94b1c43b1e69baf0c2431e5a4c0b439bf02f4b5a07125ce365ec8dcd9b816714</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.7.6/mattermost-9.7.6-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.7.6/mattermost-9.7.6-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.6.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-6-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.6.3/mattermost-9.6.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.6.3/mattermost-9.6.3-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">a636fbfb994dc4d4a5debd775149e17ae08d5af159c39d458facb7d8188ba4e4</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.6.3/mattermost-9.6.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.6.3/mattermost-9.6.3-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.5.7 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-5-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.5.7/mattermost-9.5.7-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.5.7/mattermost-9.5.7-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">c6dfa5876bb9494a20449b2d5c79b0f588f5d6a46a96b6c2e1d0425b2b0668fe</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.5.7/mattermost-9.5.7-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.5.7/mattermost-9.5.7-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.4.5 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-4-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.4.5/mattermost-9.4.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.4.5/mattermost-9.4.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">17a49bfe180bc51a6ed33597fe713afed7f5a586e9f7adcb88e5c58c7860ba4c</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.4.5/mattermost-9.4.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.4.5/mattermost-9.4.5-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Enterprise Edition v9.3.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-3-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.3.3/mattermost-9.3.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.3.3/mattermost-9.3.3-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">26296f0d8ae4acaa389adc8fb5a5917620f8a0d0017fae29ab1adc3856feb164</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.3.3/mattermost-9.3.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.3.3/mattermost-9.3.3-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Enterprise Edition v9.2.6 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-2-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.2.6/mattermost-9.2.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -557,10 +1175,10 @@
 <li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.0.5/mattermost-9.0.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.0.5/mattermost-9.0.5-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Enterprise Edition v8.1.10 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-1-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">ab1156fcff8835c30a4b368666d38eaf5322fe096065e88abd0f98374a97d3bd</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.1.10/mattermost-8.1.10-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Enterprise Edition v8.1.13 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-1-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.1.13/mattermost-8.1.13-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.1.13/mattermost-8.1.13-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">d0a7edf4eb0aff7219cc589e41b280178665601a6d3daa0272528fabba9ec331</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.1.13/mattermost-8.1.13-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.1.13/mattermost-8.1.13-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Enterprise Edition v8.0.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.0.4/mattermost-8.0.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -1039,28 +1657,51 @@
 </ul>
 </dd>
 </dl>
-</section>
-<section id="mattermost-team-edition">
-<h2><a class="toc-backref" href="#on-this-page">Mattermost Team Edition</a><a class="headerlink" href="#mattermost-team-edition" title="Permalink to this headline"></a></h2>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Mattermost Team Edition</label><div class="tab-content docutils">
 <p>The open source Mattermost Team Edition is functionally identical to the commercial Mattermost Enterprise Edition in its free “team mode”, but there is no ability to unlock enterprise features. It deploys as single Linux binary with PostgreSQL or MySQL under an MIT license.</p>
 <p>We generally recommend installing Enterprise Edition, even if you don’t currently need a license. This provides the flexibility to seamlessly unlock Enterprise features should you need them. However, if you only want to install software with a fully open source code base, then Team Edition is the best choice for you.</p>
 <dl class="simple">
-<dt>Mattermost Team Edition v9.5.1 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-5-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">17e73b98a6b874b90a4da7ac5b7cead9d0892ec82d066f692c2aefb639cf658e</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.5.1/mattermost-team-9.5.1-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v9.9.1 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-9-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.9.1/mattermost-team-9.9.1-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.9.1/mattermost-team-9.9.1-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">24e862acf3a46ad52db7f24581357c4623faa391c1148d5ca7ed17c1228d081c</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.9.1/mattermost-team-9.9.1-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.9.1/mattermost-team-9.9.1-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Team Edition v9.4.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-4-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">28ea356906f48b1c473655f5cc9bb216c59f8e1623662a3c3fbba207a4d4adb9</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.4.3/mattermost-team-9.4.3-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v9.8.2 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-8-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.8.2/mattermost-team-9.8.2-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.8.2/mattermost-team-9.8.2-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">bdaf036b7dbed8fad59918187a30282b0a6e5c1952b12a4b8a66914560ba4506</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.8.2/mattermost-team-9.8.2-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.8.2/mattermost-team-9.8.2-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Team Edition v9.3.2 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-3-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">3e392777114ae1315966383a63ca636b1ab7971386fba413cc7adfcd53d4b5d0</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.3.2/mattermost-team-9.3.2-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v9.7.6 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-7-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.7.6/mattermost-team-9.7.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.7.6/mattermost-team-9.7.6-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">e7633a3214543026fa3737cea3c2f42cad85d532de815991443941ab32d8592a</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.7.6/mattermost-team-9.7.6-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.7.6/mattermost-team-9.7.6-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.6.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-6-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.6.3/mattermost-team-9.6.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.6.3/mattermost-team-9.6.3-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">630a51a8c3228465914b318fd0caa634f1a0a39010482aa478f090efee4ca566</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.6.3/mattermost-team-9.6.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.6.3/mattermost-team-9.6.3-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.5.7 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-5-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.5.7/mattermost-team-9.5.7-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.5.7/mattermost-team-9.5.7-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">73fa167bffb84c9fe50667234dbdfdd821a5f081f8538702aac0aabd9631c9ef</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.5.7/mattermost-team-9.5.7-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.5.7/mattermost-team-9.5.7-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.4.5 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-4-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.4.5/mattermost-team-9.4.5-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.4.5/mattermost-team-9.4.5-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">9ab357c21c5d786965f2dc622a109630908b6eacd6412e2d57990e9c92ae19fb</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.4.5/mattermost-team-9.4.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.4.5/mattermost-team-9.4.5-linux-amd64.tar.gz.sig</a></p></li>
+</ul>
+</dd>
+<dt>Mattermost Team Edition v9.3.3 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-3-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.3.3/mattermost-team-9.3.3-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/9.3.3/mattermost-team-9.3.3-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">c5ff7e13935c11b88f9fa4e5ccd3f448cfd3e61d2917c6f51ef6a4065e315276</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.3.3/mattermost-team-9.3.3-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.3.3/mattermost-team-9.3.3-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Team Edition v9.2.6 - <a class="reference external" href="https://docs.mattermost.com/deploy/mattermost-changelog.html#release-v9-2-feature-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/9.2.6/mattermost-team-9.2.6-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -1081,10 +1722,10 @@
 <li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/9.0.5/mattermost-team-9.0.5-linux-amd64.tar.gz.sig">https://releases.mattermost.com/9.0.5/mattermost-team-9.0.5-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
-<dt>Mattermost Team Edition v8.1.10 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-1-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz</span></code></p></li>
-<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">9b0c5354931f11326d1f22a283cc37501be726cd951c00d4fb64afb37e212f8c</span></code></p></li>
-<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.1.10/mattermost-team-8.1.10-linux-amd64.tar.gz.sig</a></p></li>
+<dt>Mattermost Team Edition v8.1.13 <em>Extended Support Release (ESR)</em> - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-1-extended-support-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.1.13/mattermost-team-8.1.13-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://releases.mattermost.com/8.1.13/mattermost-team-8.1.13-linux-amd64.tar.gz</span></code></p></li>
+<li><p>SHA-256 Checksum: <code class="docutils literal notranslate"><span class="pre">024138ea4072245ec71ed90268799d63cb2776bbf89d590f1f014cd27dadbbf0</span></code></p></li>
+<li><p>GPG Signature: <a class="reference external" href="https://releases.mattermost.com/8.1.13/mattermost-team-8.1.13-linux-amd64.tar.gz.sig">https://releases.mattermost.com/8.1.13/mattermost-team-8.1.13-linux-amd64.tar.gz.sig</a></p></li>
 </ul>
 </dd>
 <dt>Mattermost Team Edition v8.0.4 - <a class="reference external" href="https://docs.mattermost.com/install/self-managed-changelog.html#release-v8-0-major-release">View Changelog</a> - <a class="reference external" href="https://releases.mattermost.com/8.0.4/mattermost-team-8.0.4-linux-amd64.tar.gz?src=arc">Download</a></dt><dd><ul class="simple">
@@ -1603,391 +2244,131 @@
 </ul>
 </dd>
 </dl>
+</div>
+</div>
 </section>
-</section>
 
-
-           </div>
-           
-          </article>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="downgrading-mattermost-server.html" class="btn btn-neutral float-left" title="Downgrade Mattermost Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../guides/scale-mattermost.html" class="btn btn-neutral float-right" title="Scale Mattermost" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2015-2024 Mattermost.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
+        </article>
       </div>
-
-    </section>
-
-  </div>
-  
- 
-
-
-
-
-<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-        <span class="fa fa-cog">&nbsp;&nbsp;Options</span>&nbsp;
-        <span class="fa fa-angle-up"></span>
-    </span>
-    <div class="rst-other-versions">
-        <dl>
-            <dt>Contribute</dt>
-            <dd>
-                <a href="https://github.com/mattermost/docs/issues">Report a Problem</a>
-            </dd>
-            
-            <dd>
-                <a href="https://github.com/mattermost/docs/blob/master/source/upgrade/version-archive.rst"> Edit on GitHub</a>
-            </dd>
-            
-        </dl>
+      <footer>
+        <div class="docs-feedback-block">
+        <div class="c-thermometer-modal__container">
+    <div>
+        <div class="c-thermometer-modal__content">
+            <h3>Tell us more!</h3>
+            <p>Your feedback helps us improve the Mattermost product documentation.</p>
+            <p><b>How can we make this page more helpful?</b></p>
+            <textarea maxlength="186" rows="4" placeholder="Share your feedback here"></textarea>
+            <div class="c-thermometer-modal__textarea-footer">
+                <div class="c-thermometer-modal__counter">
+                    <span>0</span>/186
+                </div>
+            </div>
+            <p>Have a feature request? <a href="https://mattermost.com/suggestions" target="blank"> Share it here.</a></p>
+            <p>Having issues? <a href="https://community.mattermost.com" target="blank">Join our Community server.</a></p>
+            <div class="c-thermometer-modal__footer">
+                <button class="btn btn-link">Cancel</button>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
     </div>
 </div>
-
-
-  <div data-swiftype-index=false class="notification-bar sticky-top">
-    <div class="notification-bar__content">
-        <a class="notification-bar__close" data-ol-has-click-handler="">
-            <span aria-hidden="true">×</span>
-        </a>
-	    <div class="notification-bar__wrapper">
-		    <img src="../_static/images/notification-bar/icon-green-rocket.svg" alt="" class="notification-bar__icon"><a href="https://mattermost.com/blog/inc-recognizes-mattermost-as-a-power-partner/" target="_blank" class="notification-bar__link">Inc. Recognizes Mattermost as a 2023 'Power Partner'!</a>
-		</div>
+<div class="c-thermometer__group">
+    <div class="c-thermometer-popup">
+        <div class="c-thermometer-popup__close">×</div>
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9.5" cy="9.5" r="9.5" fill="#9ca0a5" fill-opacity="0.08"/>
+            <g clip-path="url(#clip0)">
+                <path d="M15.0172 6.43306L7.81719 13.6331L4.51959 10.3211L5.36919 9.48586L7.81719 11.9339L14.1676 5.58346L15.0172 6.43306Z" fill="#166DE0"/>
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="13.4118" height="11.1765" fill="white" transform="translate(2.79395 3.35303)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <h5>Thank you!</h5>
+        <p>We appreciate your feedback.</p>
+    </div>
+    <div class="c-thermometer">
+        <div class="c-thermometer__trigger">
+            <p class="c-thermometer__paragraph">Did you find what you were looking for?</p>
+            <div class="c-thermometer__emojis">
+                <a href="#" class="rate-this-page-action" data-rating="Yes">
+                    <span class="c-thermometer__emoji">😀</span>
+                    <p class="c-thermometer__emoji_action">Yes</p>
+                </a>
+                <a href="#" class="rate-this-page-action" data-rating="Somewhat">
+                    <span class="c-thermometer__emoji">😐</span>
+                    <p class="c-thermometer__emoji_action">Mostly</p>
+                </a>
+                <a href="#" class="rate-this-page-action" data-rating="No">
+                    <span class="c-thermometer__emoji">🙁</span>
+                    <p class="c-thermometer__emoji_action">No!</p>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
-<header class="site-header site-header--not-home" itemscope="" itemtype="https://schema.org/WebSite">
-
-	<div class="nav-container site-header__container">
-		<div class="row site-header__row">
-			<div class="col-9 col-md-3 col-lg-2 site-header__col--logo">
-				<a href="/" data-ol-has-click-handler=""><img width="190" height="43" src="../_static/images/Mattermost-Logo-Denim.svg" alt="Mattermost Logo"></a>
-			</div>
-			<div class="col-3 col-md-9 site-header__mobile-menu" id="hamburger" data-ol-has-click-handler="">
-				<svg class="hamburger-open" width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line y1="1.5" x2="25" y2="1.5" stroke="#1B1D22" stroke-width="3"></line>
-					<line y1="9.83325" x2="25" y2="9.83325" stroke="#1B1D22" stroke-width="3"></line>
-					<line y1="18.1667" x2="25" y2="18.1667" stroke="#1B1D22" stroke-width="3"></line>
-				</svg>
-				<svg class="hamburger-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line x1="2.06066" y1="1.93934" x2="19.0607" y2="18.9393" stroke="#1B1D22" stroke-width="3"></line>
-					<line y1="-1.5" x2="24.0416" y2="-1.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 20 3)" stroke="#1B1D22" stroke-width="3"></line>
-				</svg>
-			</div>
-			<div class="col-12 col-lg-10 site-header__col--menu">
-				<ul class="site-nav" id="navigation">
-					<li class="site-nav__toplink site-nav__hassubnav">
-						<a href="javascript:void(0);" data-ol-has-click-handler="">
-							<div class="toplink-wrapper">
-								Platform
-								<span>
-									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
-									</svg>
-								</span>
-							</div>
-						</a>
-						<div class="sub-menu sub-menu__products">
-							<div class="sub-menu__products__main">
-								<div class="sub-menu__products-link-col">
-									<p class="sub-menu__link-col-header">Platform</p>
-									<ul>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/channels/" data-ol-has-click-handler="">
-												Channels
-											</a>
-										</li>	
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/playbooks/" data-ol-has-click-handler="">
-												Playbooks
-											</a>
-										</li>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/security/" data-ol-has-click-handler="">
-												Security
-											</a>
-										</li>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/integrations-overview/" data-ol-has-click-handler="">
-												Integrations
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="sub-menu__products-link-col">
-									<p class="sub-menu__link-col-header">Benefits</p>
-									<ul>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/solutions/use-cases/secure-collaboration/" data-ol-has-click-handler="">
-											Control of Collaboration
-											</a>
-										</li>	
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/solutions/use-cases/error-reduction/" data-ol-has-click-handler="">
-											Risk &amp; Error Reduction
-											</a>
-										</li>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/solutions/use-cases/accelerate-productivity/" data-ol-has-click-handler="">
-											Decision Optimization
-											</a>
-										</li>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/open-source/" data-ol-has-click-handler="">
-											Open Source
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="sub-menu__products-link-col">
-									<p class="sub-menu__link-col-header">Interoperability</p>
-									<ul>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/solutions/mattermost-for-microsoft-teams/" data-ol-has-click-handler="">
-												MS Teams
-											</a>
-										</li>
-										<li class="sub-menu__links--single">
-											<a href="https://mattermost.com/atlassian/" data-ol-has-click-handler="">
-												Atlassian
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<figure class="sub-menu__promo">
-								<p class="promo-heading">Featured Resource</p>
-								<p class="promo-subhead">Our most popular content.</p>
-								<a href="https://mattermost.com/mattermost-product-overview-video/" class="promo-block" id="platform-promo-2" data-ol-has-click-handler="">
-									<div class="promo-block__image">
-										<img src="../_static/images/nav/promo/promo-mattermost-platform-overview-video.png" alt="">
-									</div>
-									<div class="promo-block__copy">Platform Overview Video »</div>
-								</a>
-							</figure>
-							<div class="mobile-spacer"></div>
-						</div>
-					</li>
-					<li class="site-nav__toplink site-nav__hassubnav">
-						<a href="javascript:void(0);" data-ol-has-click-handler="">
-							<div class="toplink-wrapper">
-								Solutions
-								<span>
-									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
-									</svg>
-								</span>
-							</div>
-						</a>
-						<div class="sub-menu sub-menu__solutions">
-							<div class="sub-menu__solutions__main-wrapper">
-								<p class="sub-menu__link-col-header">Solutions</p>
-								<ul>
-									<li class="sub-menu__links--single">
-										<a href="https://mattermost.com/solutions/use-cases" data-ol-has-click-handler="">
-											Use Cases
-										</a>
-									</li>
-									<li class="sub-menu__links--single">
-										<a href="https://mattermost.com/solutions/industries" data-ol-has-click-handler="">
-											Industries
-										</a>
-									</li>
-									<li class="sub-menu__links--single">
-										<a href="https://mattermost.com/customers/" data-ol-has-click-handler="">
-											Customers
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="site-nav__toplink">
-						<a href="https://mattermost.com/pricing/" data-ol-has-click-handler="">
-							<div class="toplink-wrapper">Pricing</div>
-						</a>
-					</li>
-					<li class="site-nav__toplink site-nav__hassubnav">
-						<a href="javascript:void(0);" data-ol-has-click-handler="">
-							<div class="toplink-wrapper">
-								Developers
-								<span>
-									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
-									</svg>
-								</span>
-							</div>
-						</a>
-						<div class="sub-menu sub-menu__developers">
-							<div class="sub-menu__developers__main">
-								<p class="sub-menu__link-col-header">Developers</p>
-								<div class="sub-menu__developers-grid-wrapper">
-									<div class="sub-menu__dev-link-col">
-										<ul>
-											<li class="sub-menu__links--single">
-												<a href="https://mattermost.com/download/" data-ol-has-click-handler="">
-												Deploy
-												</a>
-											</li>	
-											<li class="sub-menu__links--single">
-												<a href="https://developers.mattermost.com/integrate/getting-started/" data-ol-has-click-handler="">
-												Integrate
-												</a>
-											</li>
-											<li class="sub-menu__links--single">
-												<a href="https://mattermost.com/contribute/" data-ol-has-click-handler="">
-												Contribute
-												</a>
-											</li>
-											<li class="sub-menu__links--single">
-												<a href="https://mattermost.com/blog/" data-ol-has-click-handler="">
-													Blog
-												</a>
-											</li>
-											<li class="sub-menu__links--single">
-												<a href="https://mattermost.com/resources/" data-ol-has-click-handler="">
-													Resources
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="sub-menu__dev-link-col">
-										<ul>
-											<li class="sub-menu__links--single">
-												<a href="https://mattermost.com/community/" data-ol-has-click-handler="">
-												Community
-												</a>
-											</li>	
-											<li class="sub-menu__links--single">
-												<a href="https://academy.mattermost.com/" data-ol-has-click-handler="">
-												Academy
-												</a>
-											</li>
-											<li class="sub-menu__links--single">
-												<a href="https://docs.mattermost.com/" data-ol-has-click-handler="">
-												Docs
-												</a>
-											</li>
-											<li class="sub-menu__links--single">
-												<a href="https://api.mattermost.com/" data-ol-has-click-handler="">
-													API Reference
-												</a>
-											</li>
-											<li class="sub-menu__links--single">
-												<a href="https://docs.mattermost.com/guides/changelogs.html" data-ol-has-click-handler="">
-													Release Notes
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="site-nav__toplink">
-						<a href="https://mattermost.com/enterprise/" data-ol-has-click-handler="">
-						<div class="toplink-wrapper">Enterprise</div>
-						</a>
-					</li>
-					<li class="site-nav__toplink site-nav__hassubnav">
-						<a href="javascript:void(0);" data-ol-has-click-handler="">
-							<div class="toplink-wrapper">
-								Login
-								<span>
-									<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1.50262L5.5 5.97313L10 1.50262" stroke="#BABEC9" stroke-width="1.5" stroke-linejoin="round"></path>
-									</svg>
-								</span>
-							</div>
-						</a>
-						<div class="sub-menu sub-menu__login">
-							<div class="sub-menu__links-wrapper">
-								<p class="sub-menu__link-col-header">Login</p>
-								<ul>
-									<li class="sub-menu__links--single">
-										<a href="https://customers.mattermost.com/cloud/connect-workspace" data-ol-has-click-handler="">
-										My Workspace
-										</a>
-									</li>
-									<li class="sub-menu__links--single">
-										<a href="https://customers.mattermost.com/login/" data-ol-has-click-handler="">
-											Admin Portal
-										</a>
-									</li>
-									<li class="sub-menu__links--single">
-										<a href="https://mattermost.com/download/" data-ol-has-click-handler="">
-											Apps
-										</a>
-									</li>
-									<li class="sub-menu__links--single">
-										<a href="https://support.mattermost.com/hc/en-us/" data-ol-has-click-handler="">
-											Support
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-											<li class="site-nav__toplink site-nav__button">
-							<a class="mm-button mm-button-solid mm-button-blue" href="https://mattermost.com/download/" data-ol-has-click-handler="">Get Started</a>
-						</li>
-										<li class="site-nav__toplink site-nav__button site-nav__button--secondary">
-						<a class="mm-button mm-button-outline--thin mm-button-outline--thin-blue" href="https://mattermost.com/contact-sales/" data-ol-has-click-handler="">Contact Sales</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="header__searchbar">
-		<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-			<input type="text" name="q" placeholder="Search by keyword" autofocus />
-			<input type="hidden" name="check_keywords" value="yes" />
-			<input type="hidden" name="area" value="default" />
-		</form>
-	</div>
-	
-</header>
-
-  
-    <!--[if lt IE 9]>
-      <script src="../_static/js/html5shiv.min.js"></script>
-    <![endif]-->
+    </div>
     
-      
-        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-          <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-          <script src="../_static/jquery.js"></script>
-          <script src="../_static/underscore.js"></script>
-          <script src="../_static/doctools.js"></script>
-          <script src="../_static/clipboard.min.js"></script>
-          <script src="../_static/copybutton.js"></script>
-          <script src="../_static/myscript.js?version=v19"></script>
-      
-      <script type="text/javascript" src="../_static/js/theme.js"></script>
+        <div class="related-pages">
+          <a class="next-page" href="desktop.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Desktop</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="unsupported-legacy-releases.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Unsupported legacy releases</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2015-2024 Mattermost
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
 
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
       
-
       
-
-	<script type="text/javascript">
-		jQuery(function () {
-			SphinxRtdTheme.Navigation.enable(true);
-		});
-	</script> 
-
-</body>
+      
+    </aside>
+  </div>
+</div>
+<script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/js/jquery.js?v=3d1d8b85"></script>
+    <script src="../_static/js/copybuttons.js?v=9f98b601"></script>
+    <script src="../_static/js/thermometer.js?v=681cc143"></script>
+    <script src="../_static/js/myscript-v1.js?v=465d7201"></script>
+    </body>
 </html>

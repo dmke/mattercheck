@@ -11,17 +11,15 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/blang/semver"
 	"github.com/dmke/mattercheck/version"
 	"gopkg.in/xmlpath.v2"
 )
 
 // TODO: a JSON feed would be nice (https://github.com/mattermost/docs/issues/1190#issuecomment-302162095)
-const releasesURL = "https://docs.mattermost.com/upgrade/version-archive.html"
+const releasesURL = "https://docs.mattermost.com/about/version-archive.html"
 
 var (
-	absEnt  = xmlpath.MustCompile(`//section[@id='mattermost-enterprise-edition']/dl/dt`)
-	absTeam = xmlpath.MustCompile(`//section[@id='mattermost-team-edition']/dl/dt`)
+	absEntry = xmlpath.MustCompile(`//dl/dt`)
 
 	relChangeLog = xmlpath.MustCompile(`./a[1]/@href`)
 	relDownload  = xmlpath.MustCompile(`./a[2]/@href`)
@@ -51,7 +49,7 @@ func (a *Archive) UpdateCandidate(v *version.Version) *Release {
 		ref = a.team
 	}
 
-	if ref != nil && ref.Version.GT(*v.Version) {
+	if ref != nil && ref.Version.GT(v.Version) {
 		return ref
 	}
 	return nil
@@ -80,54 +78,76 @@ func FetchSupported() (*Archive, error) {
 		return nil, err
 	}
 
-	return &Archive{
-		ent:  findLatestRelease(absEnt, doc),
-		team: findLatestRelease(absTeam, doc),
-	}, nil
+	ent, team := findLatestRelease(doc)
+	return &Archive{ent, team}, nil
 }
 
-func findLatestRelease(path *xmlpath.Path, root *xmlpath.Node) (release *Release) {
-	max := &semver.Version{}
+func findLatestRelease(root *xmlpath.Node) (entRelease, teamRelease *Release) {
+	type tmp struct {
+		v version.Version
+		x *xmlpath.Node
+	}
+	ent := tmp{}
+	team := tmp{}
 
-	iter := path.Iter(root)
+	iter := absEntry.Iter(root)
 	for iter.Next() {
 		node := iter.Node()
-		v, err := version.ExtractFromBytes(node.Bytes(), path == absEnt)
-		if err != nil {
+
+		v, err := version.ExtractFromBytes(node.Bytes())
+		if err != nil || v == nil {
 			// TODO: return error? verbose log?
 			continue
 		}
 
-		if v.LTE(*max) {
-			continue
-		}
-		max = v.Version
-
-		r := &Release{
-			Version:   v,
-			Download:  "-",
-			ChangeLog: "-",
-			Checksum:  "-",
-		}
-		if s, ok := relDownload.String(node); ok {
-			if u, err := absoluteURL(s); err == nil {
-				r.Download = u
+		if v.Enterprise {
+			if v.LTE(ent.v.Version) {
+				continue
 			}
-		}
-		if s, ok := relChangeLog.String(node); ok {
-			u, err := url.Parse(s)
-			if err != nil {
-				r.ChangeLog = s
-			} else {
-				r.ChangeLog = baseURL.ResolveReference(u).String()
+			ent.v = *v
+			ent.x = node
+		} else {
+			if v.LTE(team.v.Version) {
+				continue
 			}
+			team.v = *v
+			team.x = node
 		}
-		if s, ok := relChecksum.String(node); ok {
-			r.Checksum = "sha256:" + s
-		}
-		release = r
 	}
-	return release
+
+	if ent.x != nil {
+		entRelease = parseRelease(&ent.v, ent.x)
+	}
+	if team.x != nil {
+		teamRelease = parseRelease(&team.v, team.x)
+	}
+	return
+}
+
+func parseRelease(v *version.Version, node *xmlpath.Node) *Release {
+	r := &Release{
+		Version:   v,
+		Download:  "-",
+		ChangeLog: "-",
+		Checksum:  "-",
+	}
+	if s, ok := relDownload.String(node); ok {
+		if u, err := absoluteURL(s); err == nil {
+			r.Download = u
+		}
+	}
+	if s, ok := relChangeLog.String(node); ok {
+		u, err := url.Parse(s)
+		if err != nil {
+			r.ChangeLog = s
+		} else {
+			r.ChangeLog = baseURL.ResolveReference(u).String()
+		}
+	}
+	if s, ok := relChecksum.String(node); ok {
+		r.Checksum = "sha256:" + s
+	}
+	return r
 }
 
 // get can be replaced in tests
